@@ -86,7 +86,6 @@ export default async function UseCaseDetailPage({ params }: Props) {
                 {documentToReactComponents(post.fields.content as Document, renderOptions)}
             </div>
         ) : (
-            {/* EN: Content is being updated... */}
             <p className="text-center text-gray-500 italic">Контент обновляется...</p>
         )}
     </article>

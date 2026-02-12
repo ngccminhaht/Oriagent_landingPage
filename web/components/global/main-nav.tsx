@@ -154,7 +154,7 @@ export function MainNav() {
             </Link>
           </div>
 
-          {/* Кнопка Sign In убрана */}}
+          {/* Кнопка Sign In убрана */}
 
           {/* Mobile Menu Trigger */}
           <button
