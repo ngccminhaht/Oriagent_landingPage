@@ -16,8 +16,9 @@ export function AnimatedCarousel({ leftImages, rightImages }: AnimatedCarouselPr
 
           {/* --- Left Column --- */}
           <div className="flex flex-col justify-center overflow-hidden px-6 py-4">
+            {/* EN: Trusted by global companies */}
             <h2 className="mb-6 text-center text-xs font-medium uppercase tracking-wider text-gray-500">
-              Trusted by global companies
+              Нам доверяют компании по всему миру
             </h2>
 
             {/* Carousel Container with Fade Mask */}
@@ -55,8 +56,9 @@ export function AnimatedCarousel({ leftImages, rightImages }: AnimatedCarouselPr
 
           {/* --- Right Column --- */}
           <div className="flex flex-col justify-center overflow-hidden border-t border-gray-200 px-6 py-6 lg:border-l lg:border-t-0">
+            {/* EN: Trusted by global companies */}
             <h2 className="mb-6 text-center text-xs font-medium uppercase tracking-wider text-gray-500">
-              Trusted by global companies
+              Нам доверяют компании по всему миру
             </h2>
 
             <div className="relative flex h-6 w-full items-center overflow-hidden ">

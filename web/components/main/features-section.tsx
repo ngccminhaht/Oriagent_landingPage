@@ -4,20 +4,26 @@ export function FeaturesSection() {
   const features = [
     {
       id: 1,
-      title: 'Your Personal Knowledge Ecosystem',
-      description: 'Transform the way you store and access information with an elegantly designed knowledge base that adapts to your workflow. Organize your data with intuitive precision.',
+      // EN: Your Personal Knowledge Ecosystem
+      title: 'Ваша персональная экосистема знаний',
+      // EN: Transform the way you store and access information with an elegantly designed knowledge base that adapts to your workflow. Organize your data with intuitive precision.
+      description: 'Измените способ хранения и доступа к информации с помощью элегантно спроектированной базы знаний, адаптирующейся к вашему рабочему процессу. Организуйте данные с интуитивной точностью.',
       illustration: '/knowledge.svg',
     },
     {
       id: 2,
-      title: 'Beautifully Transparent Process',
-      description: 'Experience unprecedented clarity with our immersive visualization tools. Watch your AI agent work in real-time, putting you in complete control.',
+      // EN: Beautifully Transparent Process
+      title: 'Красиво прозрачный процесс',
+      // EN: Experience unprecedented clarity with our immersive visualization tools. Watch your AI agent work in real-time, putting you in complete control.
+      description: 'Откройте беспрецедентную ясность с нашими инструментами визуализации. Наблюдайте за работой вашего ИИ-агента в реальном времени, сохраняя полный контроль.',
       illustration: '/process.svg',
     },
     {
       id: 3,
-      title: 'Effortlessly Powerful. No Code Needed.',
-      description: 'Revolutionary simplicity meets sophisticated technology. Create powerful AI workflows with intuitive commands—no programming required.',
+      // EN: Effortlessly Powerful. No Code Needed.
+      title: 'Мощно и просто. Без кода.',
+      // EN: Revolutionary simplicity meets sophisticated technology. Create powerful AI workflows with intuitive commands—no programming required.
+      description: 'Революционная простота в сочетании с передовыми технологиями. Создавайте мощные ИИ-рабочие процессы с помощью интуитивных команд — программирование не требуется.',
       illustration: '/simple.svg',
     },
   ];

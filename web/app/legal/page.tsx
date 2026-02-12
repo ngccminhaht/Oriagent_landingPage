@@ -6,8 +6,10 @@ export default function LegalDocsList() {
   // Định nghĩa dữ liệu để dễ quản lý và render
   const documents = [
     {
-      title: "Terms of Use",
-      description: "Terms of Use for oriagent.com services",
+      // EN: Terms of Use
+      title: "Условия использования",
+      // EN: Terms of Use for oriagent.com services
+      description: "Условия использования сервисов oriagent.com",
       icon: Scale,
       colorClass: "text-blue-600",
       bgHoverClass: "hover:bg-blue-50 rounded-2xl",
@@ -15,8 +17,10 @@ export default function LegalDocsList() {
       href: "/legal/terms-of-use"
     },
     {
-      title: "Cookie Policy",
-      description: "How we use cookies on our website",
+      // EN: Cookie Policy
+      title: "Политика файлов cookie",
+      // EN: How we use cookies on our website
+      description: "Как мы используем файлы cookie на нашем сайте",
       icon: FileText,
       colorClass: "text-orange-500",
       bgHoverClass: "hover:bg-orange-50",
@@ -24,8 +28,10 @@ export default function LegalDocsList() {
       href: "/legal/cookie-policy"
     },
     {
-      title: "Privacy Policy",
-      description: "Privacy Policy for oriagent.com services",
+      // EN: Privacy Policy
+      title: "Политика конфиденциальности",
+      // EN: Privacy Policy for oriagent.com services
+      description: "Политика конфиденциальности сервисов oriagent.com",
       icon: Shield,
       colorClass: "text-green-500",
       bgHoverClass: "hover:bg-green-50 rounded-2xl",
@@ -39,8 +45,10 @@ export default function LegalDocsList() {
       <div className="container mx-auto px-4 max-w-4xl">
         
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 underline underline-offset-4 decoration-gray-700">Legal Center</h1>
-          <p className="text-gray-500 mt-2">Review our policies and terms regarding your usage.</p>
+          {/* EN: Legal Center */}
+          <h1 className="text-4xl font-bold text-gray-900 underline underline-offset-4 decoration-gray-700">Юридический центр</h1>
+          {/* EN: Review our policies and terms regarding your usage. */}
+          <p className="text-gray-500 mt-2">Ознакомьтесь с нашими политиками и условиями использования.</p>
         </div>
 
         {/* Container chính */}
@@ -84,7 +92,8 @@ export default function LegalDocsList() {
                   {/* Action Area (Hidden on mobile if crowded, or just arrow) */}
                   <div className="flex items-center text-gray-400 pl-4">
                     <span className="hidden sm:inline-block text-sm font-medium mr-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200 transform translate-x-2 group-hover:translate-x-0">
-                      Read Document
+                      {/* EN: Read Document */}
+                      Читать документ
                     </span>
                     <ChevronRight className={`w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200 ${doc.colorClass}`} />
                   </div>
@@ -94,8 +103,9 @@ export default function LegalDocsList() {
           })}
         </div>
 
+        {/* EN: Last updated: November 2024 */}
         <p className="text-center text-gray-400 text-sm mt-8">
-          Last updated: November 2024
+          Последнее обновление: ноябрь 2024
         </p>
       </div>
     </div>

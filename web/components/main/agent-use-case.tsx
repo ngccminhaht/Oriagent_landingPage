@@ -98,21 +98,24 @@ export function AIAgentsSection() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lime-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-lime-500"></span>
               </span>
-              Use Cases
+              {/* EN: Use Cases */}
+              Кейсы
             </span>
           </div>
 
+          {/* EN: What can AI Agents do for you? */}
           <h1 className="mb-6 text-3xl md:text-5xl font-bold tracking-tight text-gray-900">
-            What can AI Agents{' '}
+            Что могут ИИ-агенты{' '}
             <span className="relative inline-block whitespace-nowrap">
-              do for you?
+              сделать для вас?
               <svg className="absolute -bottom-2 left-0 w-full h-3 text-lime-300 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
               </svg>
             </span>
           </h1>
+          {/* EN: Streamline your workflow with intelligent agents designed for specific business functions. */}
           <p className="mx-auto max-w-2xl text-base md:text-lg text-gray-500">
-            Streamline your workflow with intelligent agents designed for specific business functions.
+            Оптимизируйте рабочие процессы с помощью интеллектуальных агентов, разработанных для конкретных бизнес-функций.
           </p>
         </div>
 
@@ -164,7 +167,8 @@ export function AIAgentsSection() {
           <div className="lg:col-span-7 p-6 md:p-10 bg-white space-y-8">
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-bold text-gray-900 animate-in fade-in slide-in-from-left-2 duration-300" key={activeTab}>
-                {activeTabConfig.label} Solutions
+                {/* EN: {label} Solutions */}
+                {activeTabConfig.label} — Решения
               </h2>
               <a
                   href="https://app.oriagent.com/apps"
@@ -173,7 +177,8 @@ export function AIAgentsSection() {
                   
                 >
                   <button className="hidden sm:flex items-center gap-1 text-xs font-medium text-gray-500 hover:text-gray-900 transition-colors">
-                    View details <ArrowRight className="h-3 w-3" />
+                    {/* EN: View details */}
+                    Подробнее <ArrowRight className="h-3 w-3" />
                   </button>
                 </a>
                
@@ -245,38 +250,44 @@ export function AIAgentsSection() {
 
             <div className="relative z-10 flex flex-col items-center space-y-6 text-center w-full max-w-sm">
 
-              <span className={`text-xl font-light transition-colors duration-300 ${currentTheme.textColor}`}>Try using</span>
+              {/* EN: Try using */}
+              <span className={`text-xl font-light transition-colors duration-300 ${currentTheme.textColor}`}>Попробуйте</span>
 
               {/* Box 1: Agent */}
               <div className="w-full transform transition-all duration-500 hover:scale-105">
                 <div className="animate-in fade-in slide-in-from-bottom-4 duration-500" key={`agent-${offsetIndex}-${activeTab}`}>
                   <div className={`rounded-2xl border p-5 shadow-lg transition-all duration-500 ${currentTheme.box1}`}>
-                    <div className={`text-xs font-bold uppercase mb-1 ${currentTheme.label1}`}>Agent</div>
-                    <div className="text-2xl sm:text-3xl font-black tracking-tight truncate">{currentContent?.agent || 'Assistant'}</div>
+                    {/* EN: Agent */}
+                    <div className={`text-xs font-bold uppercase mb-1 ${currentTheme.label1}`}>Агент</div>
+                    <div className="text-2xl sm:text-3xl font-black tracking-tight truncate">{currentContent?.agent || 'Помощник'}</div>
                   </div>
                 </div>
               </div>
 
-              <span className={`text-xl font-light transition-colors duration-300 ${currentTheme.textColor}`}>to</span>
+              {/* EN: to */}
+              <span className={`text-xl font-light transition-colors duration-300 ${currentTheme.textColor}`}>для</span>
 
               {/* Box 2: Use Case */}
               <div className="w-full transform transition-all duration-500 hover:scale-105 delay-75">
                 <div className="animate-in fade-in slide-in-from-bottom-4 duration-700" key={`usecase-${offsetIndex}-${activeTab}`}>
                   <div className={`rounded-2xl border p-5 shadow-lg transition-all duration-500 ${currentTheme.box2}`}>
-                    <div className={`text-xs font-bold uppercase mb-1 ${currentTheme.label2}`}>Action</div>
-                    <div className="text-2xl sm:text-3xl font-black tracking-tight truncate">{currentContent?.useCase || 'Process'}</div>
+                    {/* EN: Action */}
+                    <div className={`text-xs font-bold uppercase mb-1 ${currentTheme.label2}`}>Действие</div>
+                    <div className="text-2xl sm:text-3xl font-black tracking-tight truncate">{currentContent?.useCase || 'Процесс'}</div>
                   </div>
                 </div>
               </div>
 
-              <span className={`text-xl font-light transition-colors duration-300 ${currentTheme.textColor}`}>for your</span>
+              {/* EN: for your */}
+              <span className={`text-xl font-light transition-colors duration-300 ${currentTheme.textColor}`}>для вашего</span>
 
               {/* Box 3: Goal */}
               <div className="w-full transform transition-all duration-500 hover:scale-105 delay-150">
                 <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000" key={`goal-${offsetIndex}-${activeTab}`}>
                   <div className={`rounded-2xl border p-5 shadow-lg transition-all duration-500 ${currentTheme.box3}`}>
-                    <div className={`text-xs font-bold uppercase mb-1 ${currentTheme.label3}`}>Outcome</div>
-                    <div className="text-2xl sm:text-3xl font-black tracking-tight truncate">{currentContent?.goal || 'Success'}</div>
+                    {/* EN: Outcome */}
+                    <div className={`text-xs font-bold uppercase mb-1 ${currentTheme.label3}`}>Результат</div>
+                    <div className="text-2xl sm:text-3xl font-black tracking-tight truncate">{currentContent?.goal || 'Успех'}</div>
                   </div>
                 </div>
               </div>

@@ -27,9 +27,11 @@ export default function AIAgentsSection() {
     <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-slate-50">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 text-center max-w-3xl mx-auto">
-          <h1 className="text-5xl font-bold text-foreground mb-4">What can AI Agents do?</h1>
+          {/* EN: What can AI Agents do? */}
+          <h1 className="text-5xl font-bold text-foreground mb-4">Что могут ИИ-агенты?</h1>
+          {/* EN: Discover the wide range of tasks our AI agents can handle to streamline your workflow and boost efficiency. */}
           <p className="text-lg text-muted-foreground">
-            Discover the wide range of tasks our AI agents can handle to streamline your workflow and boost efficiency.
+            Откройте широкий спектр задач, которые наши ИИ-агенты могут выполнять для оптимизации рабочих процессов и повышения эффективности.
           </p>
         </div>
 
@@ -63,7 +65,8 @@ export default function AIAgentsSection() {
               </h2>
               <Link href="/">
                 <Button variant="outline" size="sm" className="gap-2 rounded-2xl">
-                  Explore Agents
+                  {/* EN: Explore Agents */}
+                  Изучить агентов
                 </Button>
               </Link>
             </div>
@@ -117,7 +120,8 @@ export default function AIAgentsSection() {
 
             {/* CTA Section */}
             <div className="mt-6 p-4 bg-slate-50 rounded-lg border border-slate-100">
-              <p className="text-xs text-muted-foreground mb-3">Need a custom {activeTab} workflow? We can help you build it.</p>
+              {/* EN: Need a custom {activeTab} workflow? We can help you build it. */}
+              <p className="text-xs text-muted-foreground mb-3">Нужен кастомный рабочий процесс {activeTab}? Мы поможем его создать.</p>
               <div className="flex flex-wrap gap-2">
                 <a
                   href="https://www.arrowhitech.com/contact-us/"
@@ -129,9 +133,11 @@ export default function AIAgentsSection() {
                     size="sm"
                     className="bg-green-500 hover:bg-green-600 w-full text-white font-semibold"
                   >
-                    Book a call
+                    {/* EN: Book a call */}
+                    Записаться на звонок
                   </Button>
-                  <Button variant="outline" size="sm" className="flex-1">Email us</Button>
+                  {/* EN: Email us */}
+                  <Button variant="outline" size="sm" className="flex-1">Напишите нам</Button>
                 </a>
                 
               </div>
@@ -141,7 +147,8 @@ export default function AIAgentsSection() {
           {/* Right Column - Auto-rotating Use Case Banner */}
           {/* Phần này giữ nguyên logic cũ, chỉ thay đổi nhẹ style để khớp với context */}
           <div className="rounded-2xl bg-gradient-to-br from-slate-50 to-green-50 border border-slate-200 p-12 flex flex-col justify-center items-center min-h-[600px] sticky top-24">
-            <p className="text-sm text-muted-foreground mb-16">Try using</p>
+            {/* EN: Try using */}
+            <p className="text-sm text-muted-foreground mb-16">Попробуйте использовать</p>
 
             <div className="space-y-6 flex flex-col justify-center items-center text-center w-full">
               <div key={`agent-${contentIndex}`} className="animate-in fade-in zoom-in-95 duration-500">
@@ -150,7 +157,8 @@ export default function AIAgentsSection() {
                 </p>
               </div>
 
-              <p className="text-muted-foreground text-lg">to</p>
+              {/* EN: to */}
+              <p className="text-muted-foreground text-lg">для</p>
 
               <div key={`usecase-${contentIndex}`} className="animate-in fade-in zoom-in-95 duration-500">
                 <p className="text-3xl font-bold px-6 py-3 bg-green-100 text-green-700 rounded-lg">
@@ -158,7 +166,8 @@ export default function AIAgentsSection() {
                 </p>
               </div>
 
-              <p className="text-muted-foreground text-lg">for your</p>
+              {/* EN: for your */}
+              <p className="text-muted-foreground text-lg">для вашего</p>
 
               <div key={`goal-${contentIndex}`} className="animate-in fade-in zoom-in-95 duration-500">
                 <p className="text-3xl font-bold text-green-500">

@@ -16,17 +16,19 @@ export function SolutionsSection() {
             <div className="mb-8  w-full flex items-center justify-center h-64 border-b border-border pb-8">
               <img
                 src="/flow.svg" // ĐIỀN LINK ẢNH TRÁI VÀO ĐÂY
-                alt="Comprehensive End-to-End Solutions"
+                alt="Комплексные сквозные решения"
                 className="h-full w-auto object-contain"
               />
             </div>
 
+            {/* EN: Comprehensive End-to-End Solutions */}
             <h3 className="text-2xl font-semibold mb-3 text-foreground">
-              Comprehensive End-to-End Solutions
+              Комплексные сквозные решения
             </h3>
+            {/* EN: A seamless journey from concept to execution with meticulously crafted solutions. Every detail refined, creating an experience that feels intuitive and magical. */}
             <p className="text-muted-foreground max-w-xl text-sm leading-relaxed">
-              A seamless journey from concept to execution with meticulously crafted solutions.
-              Every detail refined, creating an experience that feels intuitive and magical.
+              Непрерывный путь от идеи до реализации с тщательно продуманными решениями.
+              Каждая деталь отточена для создания интуитивного и впечатляющего опыта.
             </p>
           </div>
         </div>
@@ -41,18 +43,20 @@ export function SolutionsSection() {
             <div className="h-72 w-full overflow-hidden bg-gray-50 flex items-center justify-center border-b border-gray-200 p-0 m-0">
               <img
                 src="/workflows.svg" // ĐIỀN LINK ẢNH PHẢI VÀO ĐÂY
-                alt="Cutting-Edge "
+                alt="Передовые ИИ-технологии"
                 className="w-full h-full object-contain p-0 m-0"
               />
             </div>
 
             {/* Text Section */}
             <div className="flex-1 flex flex-col justify-center px-6 pt-6 m-0 text-center">
+              {/* EN: Cutting-Edge AI Technology */}
               <h3 className="text-2xl font-semibold mb-2 text-gray-900">
-                Cutting-Edge AI Technology
+                Передовые ИИ-технологии
               </h3>
+              {/* EN: Harness the power of next-generation AI, engineered to understand your needs with precision and deliver exceptional results. */}
               <p className="text-gray-600 leading-relaxed">
-                Harness the power of next-generation AI, engineered to understand your needs with precision and deliver exceptional results.
+                Используйте мощь ИИ нового поколения, созданного для точного понимания ваших потребностей и достижения исключительных результатов.
               </p>
             </div>
 
@@ -66,8 +70,9 @@ export function SolutionsSection() {
         className="w-full py-12 px-12 flex items-center justify-between border-t border-border bg-background hover:bg-amber-300 hover:text-lime-900 transition-all duration-200 cursor-pointer group text-left"
       >
         {/* Text Section */}
+        {/* EN: See our changelog */}
         <span className="text-foreground group-hover:text-lime-900 text-2xl font-medium">
-          See our changelog
+          Смотрите наш журнал обновлений
         </span>
 
         {/* Decorative stars and arrow */}

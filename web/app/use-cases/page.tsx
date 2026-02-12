@@ -20,13 +20,16 @@ export default async function UseCasePage() { // Đổi tên function cho chuẩ
       {/* Header */}
       <div className="text-center mb-16">
         <span className="bg-pink-300 text-black px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
-          Use Case
+          {/* EN: Use Case */}
+          Примеры использования
         </span>
         <h1 className="text-4xl md:text-5xl font-bold mt-4 mb-2">
-          Read the latest Useful Case
+          {/* EN: Read the latest Useful Case */}
+          Читайте последние примеры использования
         </h1>
+        {/* EN: Explore our collection of in-depth articles that break down how AI agents are transforming workflows... */}
         <p className="text-gray-500 max-w-2xl mx-auto">
-          Explore our collection of in-depth articles that break down how AI agents are transforming workflows...
+          Изучите нашу коллекцию подробных статей о том, как ИИ-агенты трансформируют рабочие процессы...
         </p>
       </div>
 
@@ -56,7 +59,7 @@ export default async function UseCasePage() { // Đổi tên function cho chuẩ
                   {heroPost.fields.title}
                 </h2>
                 <p className="text-gray-600 line-clamp-4 text-lg">
-                  {heroPost.fields.excerpt || "Click to read more..."}
+                  {heroPost.fields.excerpt || /* EN: Click to read more... */"Нажмите, чтобы читать дальше..."}
                 </p>
               </div>
             </div>
@@ -136,9 +139,11 @@ export default async function UseCasePage() { // Đổi tên function cho chuẩ
       {remainingPosts.length > 0 && (
         <div className="border-t pt-16">
           <div className="flex justify-between items-end mb-8">
-            <h3 className="text-2xl font-bold">Các Use Case khác</h3>
+            {/* EN: Other Use Cases */}
+            <h3 className="text-2xl font-bold">Другие примеры использования</h3>
             <span className="text-sm text-gray-400 hidden md:block">
-              Kéo sang ngang để xem thêm &rarr;
+              {/* EN: Scroll right to see more */}
+              Прокрутите вправо, чтобы увидеть больше &rarr;
             </span>
           </div>
           
@@ -161,7 +166,7 @@ export default async function UseCasePage() { // Đổi tên function cho chuẩ
                       />
                     ) : (
                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                          <span className="text-gray-400 text-xs">No Image</span>
+                          <span className="text-gray-400 text-xs">{/* EN: No Image */}Нет изображения</span>
                        </div>
                     )}
                   </div>

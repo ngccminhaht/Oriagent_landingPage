@@ -13,12 +13,15 @@ export function AiAgentsSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-sm font-semibold text-yellow-500 mb-2">✨ Features</p>
+          {/* EN: ✨ Features */}
+          <p className="text-sm font-semibold text-yellow-500 mb-2">✨ Возможности</p>
+          {/* EN: How do AI Agents work */}
           <h2 className="text-4xl font-bold mb-3">
-            How do AI Agents <span className="font-bold">work</span>
+            Как работают <span className="font-bold">ИИ-агенты</span>
           </h2>
+          {/* EN: Experience the simplicity and power of AI Agents working seamlessly to transform your workflow */}
           <p className="text-gray-600 text-base max-w-2xl mx-auto">
-            Experience the simplicity and power of AI Agents working seamlessly to transform your workflow
+            Откройте простоту и мощь ИИ-агентов, которые слаженно трансформируют ваши рабочие процессы
           </p>
         </div>
 
@@ -32,10 +35,12 @@ export function AiAgentsSection() {
                 className="absolute bottom-0  w-full p-6 bg-white text-center z-20 shadow-[_0_-20px_10px_rgba(0,0,0,0.15)]  shadow-gray-100/30"
                 style={{ height: '33%', minHeight: '10rem' }}
               >
-                <h3 className="text-xl text-center font-semibold text-gray-800 mb-2">Real-time AI Collaboration</h3>
+                {/* EN: Real-time AI Collaboration */}
+                <h3 className="text-xl text-center font-semibold text-gray-800 mb-2">ИИ-совместная работа в реальном времени</h3>
+                {/* EN: Experience real-time assistance. Ask your AI Agent to coordinate tasks, answer questions, and maintain team alignment. */}
                 <p className="text-gray-600 text-sm max-w-md mx-auto">
-                  Experience real-time assistance. Ask your AI Agent to coordinate
-                  tasks, answer questions, and maintain team alignment.
+                  Получите помощь в реальном времени. Попросите вашего ИИ-агента координировать
+                  задачи, отвечать на вопросы и поддерживать согласованность команды.
                 </p>
               </div>
 
@@ -53,10 +58,12 @@ export function AiAgentsSection() {
                 // Sử dụng style để chiếm 1/3 chiều cao và tạo hiệu ứng chồng lấp
                 style={{ height: '33%', minHeight: '10rem' }}
               >
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">Seamless Integrations</h3>
+                {/* EN: Seamless Integrations */}
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">Бесшовные интеграции</h3>
+                {/* EN: Unite your favorite tools for effortless connectivity. Boost productivity through interconnected workflows. */}
                 <p className="text-gray-600 text-sm max-w-md mx-auto">
-                  Unite your favorite tools for effortless connectivity.
-                  Boost productivity through interconnected workflows.
+                  Объедините ваши любимые инструменты для лёгкого взаимодействия.
+                  Повышайте продуктивность через взаимосвязанные рабочие процессы.
                 </p>
               </div>
 

@@ -53,7 +53,7 @@ export default async function UseCaseDetailPage({ params }: Props) {
         {/* Header bài viết */}
         <div className="mb-10 text-center">
             <span className="inline-block bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-4">
-              Use Case
+              {/* EN: Use Case */}Пример использования
             </span>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900 leading-tight">
                 {post.fields.title}
@@ -86,7 +86,8 @@ export default async function UseCaseDetailPage({ params }: Props) {
                 {documentToReactComponents(post.fields.content as Document, renderOptions)}
             </div>
         ) : (
-            <p className="text-center text-gray-500 italic">Nội dung đang được cập nhật...</p>
+            {/* EN: Content is being updated... */}
+            <p className="text-center text-gray-500 italic">Контент обновляется...</p>
         )}
     </article>
   );

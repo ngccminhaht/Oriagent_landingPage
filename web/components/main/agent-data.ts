@@ -36,8 +36,8 @@ export interface TabConfig {
 export const agentTabs: TabConfig[] = [
     {
         id: 'custom',
-        label: 'Custom AI Agent',
-        description: 'Build your own logic',
+        label: 'Свой ИИ-агент', // EN: Custom AI Agent
+        description: 'Создайте свою логику', // EN: Build your own logic
         icon: Bot,
         color: 'text-lime-600',
         bgColor: 'bg-lime-100',
@@ -48,8 +48,8 @@ export const agentTabs: TabConfig[] = [
     },
     {
         id: 'marketing',
-        label: 'Marketing',
-        description: 'SEO & Content Growth',
+        label: 'Маркетинг', // EN: Marketing
+        description: 'SEO и рост контента', // EN: SEO & Content Growth
         icon: Megaphone,
         color: 'text-blue-600',
         bgColor: 'bg-blue-100',
@@ -60,8 +60,8 @@ export const agentTabs: TabConfig[] = [
     },
     {
         id: 'sales',
-        label: 'Sales',
-        description: 'Outreach & Closing',
+        label: 'Продажи', // EN: Sales
+        description: 'Охват и закрытие сделок', // EN: Outreach & Closing
         icon: DollarSign,
         color: 'text-orange-600',
         bgColor: 'bg-orange-100',
@@ -72,8 +72,8 @@ export const agentTabs: TabConfig[] = [
     },
     {
         id: 'chat',
-        label: 'Customer Chat',
-        description: '24/7 Support',
+        label: 'Чат с клиентами', // EN: Customer Chat
+        description: 'Поддержка 24/7', // EN: 24/7 Support
         icon: Smartphone,
         color: 'text-yellow-600',
         bgColor: 'bg-yellow-100',
@@ -84,120 +84,121 @@ export const agentTabs: TabConfig[] = [
     },
 ]
 
-// --- 2. CONTENT FEATURES (Nội dung chi tiết từng Tab) ---
+// --- 2. CONTENT FEATURES ---
 export const tabContentData: Record<string, Feature[]> = {
     // Tab 1: Custom
     custom: [
         {
-            title: 'Build Your Own Agent',
-            description: 'Create a specialized AI workforce tailored exactly to your business needs with custom instructions and knowledge bases.',
-            badge: 'Flexible',
+            title: 'Создайте своего агента', // EN: Build Your Own Agent
+            description: 'Создайте специализированную команду ИИ, точно под потребности вашего бизнеса с пользовательскими инструкциями и базами знаний.', // EN: Create a specialized AI workforce...
+            badge: 'Гибкий', // EN: Flexible
             steps: [
-                { label: 'Define Purpose', icon: Lightbulb },
-                { label: 'Upload Knowledge', icon: Database },
-                { label: 'Set Tools', icon: Settings },
-                { label: 'Deploy', icon: Play }
+                { label: 'Определить цель', icon: Lightbulb }, // EN: Define Purpose
+                { label: 'Загрузить знания', icon: Database }, // EN: Upload Knowledge
+                { label: 'Настроить инструменты', icon: Settings }, // EN: Set Tools
+                { label: 'Развернуть', icon: Play } // EN: Deploy
             ],
-            cta: 'Start Building'
+            cta: 'Начать создание' // EN: Start Building
         },
         {
-            title: 'Multi-agent Orchestration',
-            description: 'Connect multiple agents to solve complex workflows autonomously. Example: Research Agent passes data to Writer Agent.',
-            badge: 'Advanced',
+            title: 'Мультиагентная оркестрация', // EN: Multi-agent Orchestration
+            description: 'Соединяйте несколько агентов для решения сложных задач автономно. Пример: Исследовательский агент передаёт данные агенту-писателю.', // EN: Connect multiple agents...
+            badge: 'Продвинутый', // EN: Advanced
             steps: [
-                { label: 'Assign Roles', icon: Users2 },
-                { label: 'Workflow Map', icon: Share2 },
-                { label: 'Execute', icon: Zap }
+                { label: 'Назначить роли', icon: Users2 }, // EN: Assign Roles
+                { label: 'Карта процессов', icon: Share2 }, // EN: Workflow Map
+                { label: 'Запустить', icon: Zap } // EN: Execute
             ],
-            cta: 'Explore Teams'
+            cta: 'Изучить команды' // EN: Explore Teams
         }
     ],
 
     // Tab 2: Marketing
     marketing: [
         {
-            title: 'SEO Content Generator',
-            description: 'Automatically research keywords, outline blogs, write articles, and publish to CMS to drive organic traffic.',
-            badge: 'Traffic Booster',
+            title: 'Генератор SEO-контента', // EN: SEO Content Generator
+            description: 'Автоматически исследуйте ключевые слова, составляйте планы блогов, пишите статьи и публикуйте в CMS для привлечения органического трафика.', // EN: Automatically research keywords...
+            badge: 'Рост трафика', // EN: Traffic Booster
             steps: [
-                { label: 'Keyword Research', icon: Search },
-                { label: 'Drafting', icon: FileText },
-                { label: 'Publishing', icon: Globe }
+                { label: 'Исследование ключевых слов', icon: Search }, // EN: Keyword Research
+                { label: 'Написание', icon: FileText }, // EN: Drafting
+                { label: 'Публикация', icon: Globe } // EN: Publishing
             ],
-            cta: 'Create Campaign'
+            cta: 'Создать кампанию' // EN: Create Campaign
         },
         {
-            title: 'Social Media Manager',
-            description: 'Generate viral posts for Twitter/LinkedIn from your blogs and schedule them automatically.',
-            badge: 'Viral',
+            title: 'Менеджер социальных сетей', // EN: Social Media Manager
+            description: 'Генерируйте вирусные посты для Twitter/LinkedIn из ваших блогов и планируйте их автоматически.', // EN: Generate viral posts...
+            badge: 'Вирусный', // EN: Viral
             steps: [
-                { label: 'Repurpose Content', icon: Share2 },
-                { label: 'Generate Image', icon: PenTool },
-                { label: 'Schedule', icon: BarChart3 }
+                { label: 'Переработка контента', icon: Share2 }, // EN: Repurpose Content
+                { label: 'Генерация изображений', icon: PenTool }, // EN: Generate Image
+                { label: 'Планирование', icon: BarChart3 } // EN: Schedule
             ],
-            cta: 'Auto-Post'
+            cta: 'Авто-публикация' // EN: Auto-Post
         }
     ],
 
     // Tab 3: Sales
     sales: [
         {
-            title: 'Outbound Sales Bot',
-            description: 'Identify potential leads, enrich their data, and send personalized outreach emails at scale.',
-            badge: 'Lead Gen',
+            title: 'Бот исходящих продаж', // EN: Outbound Sales Bot
+            description: 'Находите потенциальных клиентов, обогащайте их данные и отправляйте персонализированные письма в масштабе.', // EN: Identify potential leads...
+            badge: 'Лидогенерация', // EN: Lead Gen
             steps: [
-                { label: 'Scrape Leads', icon: Users },
-                { label: 'Enrich Data', icon: Database },
-                { label: 'Email Sequence', icon: Mail }
+                { label: 'Сбор лидов', icon: Users }, // EN: Scrape Leads
+                { label: 'Обогащение данных', icon: Database }, // EN: Enrich Data
+                { label: 'Цепочка писем', icon: Mail } // EN: Email Sequence
             ],
-            cta: 'Find Leads'
+            cta: 'Найти лидов' // EN: Find Leads
         },
         {
-            title: 'Meeting Booker',
-            description: 'An agent that qualifies leads via email and automatically books meetings into your calendar.',
-            badge: 'Closer',
+            title: 'Запись на встречи', // EN: Meeting Booker
+            description: 'Агент, который квалифицирует лидов по электронной почте и автоматически записывает встречи в ваш календарь.', // EN: An agent that qualifies leads...
+            badge: 'Закрытие сделок', // EN: Closer
             steps: [
-                { label: 'Qualify', icon: Check },
-                { label: 'Propose Time', icon: CalendarDays },
-                { label: 'Book Slot', icon: Check }
+                { label: 'Квалификация', icon: Check }, // EN: Qualify
+                { label: 'Предложить время', icon: CalendarDays }, // EN: Propose Time
+                { label: 'Забронировать', icon: Check } // EN: Book Slot
             ],
-            cta: 'Connect Calendar'
+            cta: 'Подключить календарь' // EN: Connect Calendar
         }
     ],
 
     // Tab 4: Chat
     chat: [
         {
-            title: 'Support Auto-Pilot',
-            description: 'Handle 80% of customer queries instantly with an AI that learns from your documentation and past tickets.',
-            badge: '24/7 Active',
+            title: 'Автопилот поддержки', // EN: Support Auto-Pilot
+            description: 'Обрабатывайте 80% запросов клиентов мгновенно с помощью ИИ, обученного на вашей документации и прошлых тикетах.', // EN: Handle 80% of customer queries...
+            badge: 'Активен 24/7', // EN: 24/7 Active
             steps: [
-                { label: 'Ingest Docs', icon: FileText },
-                { label: 'Auto-Reply', icon: Smartphone },
-                { label: 'Escalate Human', icon: Phone }
+                { label: 'Загрузить документы', icon: FileText }, // EN: Ingest Docs
+                { label: 'Авто-ответ', icon: Smartphone }, // EN: Auto-Reply
+                { label: 'Передать человеку', icon: Phone } // EN: Escalate Human
             ],
-            cta: 'Setup Chatbot'
+            cta: 'Настроить чат-бот' // EN: Setup Chatbot
         },
         {
-            title: 'Product Recommender',
-            description: 'Guide visitors to the right product based on their needs through a conversational interface.',
-            badge: 'E-commerce',
+            title: 'Рекомендации товаров', // EN: Product Recommender
+            description: 'Направляйте посетителей к нужному продукту через диалоговый интерфейс.', // EN: Guide visitors to the right product...
+            badge: 'Э-коммерция', // EN: E-commerce
             steps: [
-                { label: 'Ask Needs', icon: Search },
-                { label: 'Filter DB', icon: Database },
-                { label: 'Suggest', icon: Zap }
+                { label: 'Выяснить потребности', icon: Search }, // EN: Ask Needs
+                { label: 'Фильтрация БД', icon: Database }, // EN: Filter DB
+                { label: 'Предложить', icon: Zap } // EN: Suggest
             ],
-            cta: 'Create Guide'
+            cta: 'Создать гид' // EN: Create Guide
         }
     ]
 }
 
 // --- 3. ROTATING TEXT DATA ---
+// EN: @ContentWriter/#PersonaPainMatrix/SEO content, @SalesBot/#LeadScoring/qualified leads...
 export const rotatingContent = [
-    { agent: '@ContentWriter', useCase: '#PersonaPainMatrix', goal: 'SEO content' },
-    { agent: '@SalesBot', useCase: '#LeadScoring', goal: 'qualified leads' },
-    { agent: '@SupportGenie', useCase: '#AutoResponse', goal: 'happy customers' },
-    { agent: '@DataAnalyst', useCase: '#MarketTrends', goal: 'strategic insights' },
+    { agent: '@Копирайтер', useCase: '#МатрицаПерсон', goal: 'SEO-контент' },
+    { agent: '@БотПродаж', useCase: '#ОценкаЛидов', goal: 'квалиф. лиды' },
+    { agent: '@ДжинПоддержки', useCase: '#АвтоОтвет', goal: 'довольные клиенты' },
+    { agent: '@АналитикДанных', useCase: '#ТрендыРынка', goal: 'стратегич. инсайты' },
 ]
 
 // Import thêm icon còn thiếu cho Data file nếu cần để tránh lỗi

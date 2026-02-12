@@ -20,10 +20,10 @@ interface ChartCategoryData {
 }
 
 const categoryDataRaw: ChartCategoryData[] = [
-  { key: 'Landing Page', data: 85 },
-  { key: 'Add Feature X', data: 70 },
-  { key: 'Bug Fixing', data: 95 },
-  { key: 'Deploy Update', data: 60 },
+  { key: 'Лендинг', data: 85 }, // EN: Landing Page
+  { key: 'Доб. функцию X', data: 70 }, // EN: Add Feature X
+  { key: 'Испр. ошибок', data: 95 }, // EN: Bug Fixing
+  { key: 'Деплой', data: 60 }, // EN: Deploy Update
 ];
 
 const validatedCategoryData = categoryDataRaw.map(item => ({
@@ -56,9 +56,11 @@ function IncidentSummaryCard(): React.ReactNode {
     <div className="w-full max-w-[800px] p-6 bg-white rounded-3xl shadow-sm border border-gray-100 ">
 
       <div className="text-center mb-4">
-        <h3 className="text-lg font-semibold text-gray-800">Smart Automation</h3>
+        {/* EN: Smart Automation */}
+        <h3 className="text-lg font-semibold text-gray-800">Умная автоматизация</h3>
+        {/* EN: Set it, forget it. Your AI Agent tackles repetitive tasks so you can focus on strategy, innovation, and growth. */}
         <p className="text-sm text-gray-500 mt-1">
-          Set it, forget it. Your AI Agent tackles repetitive tasks so you can focus on strategy, innovation, and growth.
+          Настройте и забудьте. Ваш ИИ-агент выполняет рутинные задачи, чтобы вы могли сосредоточиться на стратегии, инновациях и росте.
         </p>
       </div>
 

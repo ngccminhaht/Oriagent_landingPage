@@ -10,48 +10,50 @@ export default function IntegrationsSection() {
       <div className="py-32">
         <div className="mx-auto max-w-5xl px-6">
           <div className="text-center">
+            {/* EN: Integrate with your favorite tools */}
             <h2 className="text-balance text-3xl font-semibold md:text-4xl">
-              Integrate with your favorite tools
+              Интеграция с вашими любимыми инструментами
             </h2>
+            {/* EN: Connect seamlessly with popular platforms and services to enhance your workflow. */}
             <p className="text-muted-foreground mt-6">
-              Connect seamlessly with popular platforms and services to enhance your workflow.
+              Бесшовное подключение к популярным платформам и сервисам для улучшения вашего рабочего процесса.
             </p>
           </div>
 
           <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             <IntegrationCard
               title="GitHub"
-              description="Version control and collaboration platform for developers.">
+              description={/* EN: Version control and collaboration platform for developers. */"Платформа контроля версий и совместной работы для разработчиков."}>
               <GitHubLogo />
             </IntegrationCard>
 
             <IntegrationCard
               title="Slack"
-              description="Team communication and collaboration hub.">
+              description={/* EN: Team communication and collaboration hub. */"Центр командного общения и совместной работы."}>
               <SlackLogo />
             </IntegrationCard>
 
             <IntegrationCard
               title="Notion"
-              description="All-in-one workspace for notes, tasks, and projects.">
+              description={/* EN: All-in-one workspace for notes, tasks, and projects. */"Универсальное рабочее пространство для заметок, задач и проектов."}>
               <NotionLogo />
             </IntegrationCard>
 
             <IntegrationCard
               title="Figma"
-              description="Collaborative design and prototyping platform.">
+              description={/* EN: Collaborative design and prototyping platform. */"Платформа совместного дизайна и прототипирования."}>
               <FigmaLogo />
             </IntegrationCard>
 
             <IntegrationCard
               title="Discord"
-              description="Voice, video, and text chat platform for communities.">
+              description={/* EN: Voice, video, and text chat platform for communities. */"Платформа голосового, видео и текстового общения для сообществ."}>
               <DiscordLogo />
             </IntegrationCard>
 
             <IntegrationCard
               title="VS Code"
-              description="Lightweight but powerful source code editor.">
+              description={/* EN: Lightweight but powerful source code editor. */"Лёгкий, но мощный редактор исходного кода."}>
               <VSCodeLogo />
             </IntegrationCard>
           </div>
@@ -85,7 +87,8 @@ const IntegrationCard = ({
         <div className="flex gap-3 border-t border-dashed pt-6">
           <Button asChild variant="secondary" size="sm" className="gap-1 pr-2 shadow-none">
             <Link href={link}>
-              Learn More
+              {/* EN: Learn More */}
+              Подробнее
               <ChevronRight className="ml-0 !size-3.5 opacity-50" />
             </Link>
           </Button>

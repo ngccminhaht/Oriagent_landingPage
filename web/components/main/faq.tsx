@@ -9,95 +9,139 @@ const faqData = [
   // Cột Trái
   [
     {
-      q: "What are AI Agents?",
-      a: "AI Agents are autonomous software programs capable of observing their environment, making decisions, and taking actions to achieve specific goals without constant human intervention."
+      // EN: What are AI Agents?
+      q: "Что такое ИИ-агенты?",
+      // EN: AI Agents are autonomous software programs capable of observing their environment, making decisions, and taking actions to achieve specific goals without constant human intervention.
+      a: "ИИ-агенты — это автономные программы, способные наблюдать за окружением, принимать решения и выполнять действия для достижения конкретных целей без постоянного участия человека."
     },
     {
-      q: "What's the difference between AI Agent and ChatGPT?",
-      a: "ChatGPT is a passive chatbot that responds to prompts. AI Agents are active systems that can execute tasks, use tools, and run workflows autonomously based on a goal."
+      // EN: What's the difference between AI Agent and ChatGPT?
+      q: "В чём разница между ИИ-агентом и ChatGPT?",
+      // EN: ChatGPT is a passive chatbot that responds to prompts. AI Agents are active systems that can execute tasks, use tools, and run workflows autonomously based on a goal.
+      a: "ChatGPT — это пассивный чат-бот, отвечающий на запросы. ИИ-агенты — это активные системы, которые могут выполнять задачи, использовать инструменты и запускать рабочие процессы автономно на основе цели."
     },
     {
-      q: "What's the difference between AI Agent and AutoGPT?",
-      a: "AutoGPT is an open-source experiment demonstrating the capabilities of the GPT-4 language model. It is one type of AI Agent, but 'AI Agent' is a broader category encompassing many architectures."
+      // EN: What's the difference between AI Agent and AutoGPT?
+      q: "В чём разница между ИИ-агентом и AutoGPT?",
+      // EN: AutoGPT is an open-source experiment demonstrating the capabilities of the GPT-4 language model. It is one type of AI Agent, but 'AI Agent' is a broader category encompassing many architectures.
+      a: "AutoGPT — это эксперимент с открытым кодом, демонстрирующий возможности языковой модели GPT-4. Это один из видов ИИ-агентов, но 'ИИ-агент' — более широкая категория, охватывающая множество архитектур."
     },
     {
-      q: "What's the difference between AI Agent and babyAGI?",
-      a: "BabyAGI is a simplified AI agent framework focused on task management and execution loops. It's a specific implementation, whereas AI Agent is the general term."
+      // EN: What's the difference between AI Agent and babyAGI?
+      q: "В чём разница между ИИ-агентом и babyAGI?",
+      // EN: BabyAGI is a simplified AI agent framework focused on task management and execution loops. It's a specific implementation, whereas AI Agent is the general term.
+      a: "BabyAGI — это упрощённый фреймворк ИИ-агентов, ориентированный на управление задачами и циклы выполнения. Это конкретная реализация, тогда как ИИ-агент — общий термин."
     },
     {
-      q: "Is AI Agent free to use?",
-      a: "It depends. Some open-source frameworks are free, but enterprise-grade AI Agents usually require a subscription or usage-based fees for the underlying LLM (like GPT-4) and hosting."
+      // EN: Is AI Agent free to use?
+      q: "ИИ-агент бесплатный?",
+      // EN: It depends. Some open-source frameworks are free, but enterprise-grade AI Agents usually require a subscription or usage-based fees for the underlying LLM (like GPT-4) and hosting.
+      a: "Зависит от случая. Некоторые фреймворки с открытым кодом бесплатны, но корпоративные ИИ-агенты обычно требуют подписки или оплаты за использование базовой LLM (например, GPT-4) и хостинга."
     },
     {
-      q: "How do AI agents differ from traditional chatbots?",
-      a: "Traditional chatbots follow rigid scripts or simple pattern matching. AI Agents use LLMs to understand context, plan complex actions, and interact with external APIs/tools."
+      // EN: How do AI agents differ from traditional chatbots?
+      q: "Чем ИИ-агенты отличаются от традиционных чат-ботов?",
+      // EN: Traditional chatbots follow rigid scripts or simple pattern matching. AI Agents use LLMs to understand context, plan complex actions, and interact with external APIs/tools.
+      a: "Традиционные чат-боты следуют жёстким сценариям или простому сопоставлению шаблонов. ИИ-агенты используют LLM для понимания контекста, планирования сложных действий и взаимодействия с внешними API и инструментами."
     },
     {
-      q: "What are the common applications of AI agents in business?",
-      a: "Common uses include automated customer support, lead generation, market research, data analysis, coding assistance, and personal scheduling."
+      // EN: What are the common applications of AI agents in business?
+      q: "Каковы типичные применения ИИ-агентов в бизнесе?",
+      // EN: Common uses include automated customer support, lead generation, market research, data analysis, coding assistance, and personal scheduling.
+      a: "Среди типичных применений — автоматическая поддержка клиентов, генерация лидов, маркетинговые исследования, анализ данных, помощь в написании кода и планирование."
     },
     {
-      q: "Are AI agents capable of replacing human employees?",
-      a: "They are designed to augment humans by handling repetitive tasks, not replace them entirely. They act as 'copilots' to increase productivity."
+      // EN: Are AI agents capable of replacing human employees?
+      q: "Способны ли ИИ-агенты заменить сотрудников?",
+      // EN: They are designed to augment humans by handling repetitive tasks, not replace them entirely. They act as 'copilots' to increase productivity.
+      a: "Они созданы для помощи людям, выполняя рутинные задачи, а не для полной замены. Они выступают в роли 'копилотов' для повышения продуктивности."
     },
     {
-      q: "How do AI agents learn and improve over time?",
-      a: "Through techniques like Reinforcement Learning from Human Feedback (RLHF), memory vector databases, and fine-tuning on specific domain data."
+      // EN: How do AI agents learn and improve over time?
+      q: "Как ИИ-агенты обучаются и совершенствуются со временем?",
+      // EN: Through techniques like Reinforcement Learning from Human Feedback (RLHF), memory vector databases, and fine-tuning on specific domain data.
+      a: "С помощью таких методов, как обучение с подкреплением на основе обратной связи (RLHF), векторные базы данных памяти и тонкая настройка на данных конкретной области."
     },
     {
-      q: "What are the ethical considerations when deploying AI agents?",
-      a: "Key concerns include data privacy, bias in decision making, accountability for errors, and ensuring transparency in how the agent operates."
+      // EN: What are the ethical considerations when deploying AI agents?
+      q: "Какие этические аспекты нужно учитывать при развёртывании ИИ-агентов?",
+      // EN: Key concerns include data privacy, bias in decision making, accountability for errors, and ensuring transparency in how the agent operates.
+      a: "Ключевые вопросы включают конфиденциальность данных, предвзятость при принятии решений, ответственность за ошибки и обеспечение прозрачности работы агента."
     },
     {
-      q: "What types of AI agents are available today?",
-      a: "There are single-task agents, general-purpose assistants, and multi-agent swarms designed for complex collaborative problem solving."
+      // EN: What types of AI agents are available today?
+      q: "Какие типы ИИ-агентов существуют сегодня?",
+      // EN: There are single-task agents, general-purpose assistants, and multi-agent swarms designed for complex collaborative problem solving.
+      a: "Существуют однозадачные агенты, универсальные помощники и мультиагентные системы, предназначенные для решения сложных задач совместным путём."
     },
   ],
   // Cột Phải
   [
     {
-      q: "Who are the top AI agent providers in 2025?",
-      a: "Leading providers include OpenAI (Assistants API), Google (Vertex AI Agents), Microsoft (Copilot Studio), and specialized platforms like LangChain and AutoGPT-based services."
+      // EN: Who are the top AI agent providers in 2025?
+      q: "Кто является ведущими поставщиками ИИ-агентов в 2025 году?",
+      // EN: Leading providers include OpenAI (Assistants API), Google (Vertex AI Agents), Microsoft (Copilot Studio), and specialized platforms like LangChain and AutoGPT-based services.
+      a: "Среди ведущих поставщиков — OpenAI (Assistants API), Google (Vertex AI Agents), Microsoft (Copilot Studio) и специализированные платформы, такие как LangChain и сервисы на базе AutoGPT."
     },
     {
-      q: "How do I choose the right AI agent for my needs?",
-      a: "Identify your specific bottleneck (e.g., support volume, data entry). Look for agents with tools specific to that domain and integration capabilities with your tech stack."
+      // EN: How do I choose the right AI agent for my needs?
+      q: "Как выбрать подходящего ИИ-агента для моих задач?",
+      // EN: Identify your specific bottleneck (e.g., support volume, data entry). Look for agents with tools specific to that domain and integration capabilities with your tech stack.
+      a: "Определите конкретное узкое место (например, объём поддержки, ввод данных). Ищите агентов с инструментами для вашей области и возможностями интеграции с вашим технологическим стеком."
     },
     {
-      q: "Can AI agents handle complex tasks?",
-      a: "Yes, by breaking them down into sub-tasks (Chain-of-Thought) and using external tools (browsing, code execution) to solve each part sequentially."
+      // EN: Can AI agents handle complex tasks?
+      q: "Могут ли ИИ-агенты справляться со сложными задачами?",
+      // EN: Yes, by breaking them down into sub-tasks (Chain-of-Thought) and using external tools (browsing, code execution) to solve each part sequentially.
+      a: "Да, разбивая их на подзадачи (цепочка рассуждений) и используя внешние инструменты (поиск, выполнение кода) для последовательного решения каждой части."
     },
     {
-      q: "How do businesses integrate AI agents into their existing systems?",
-      a: "Most agents offer APIs or webhooks. Integration usually involves connecting the agent to your CRM, database, or communication channels like Slack/Teams."
+      // EN: How do businesses integrate AI agents into their existing systems?
+      q: "Как компании интегрируют ИИ-агентов в существующие системы?",
+      // EN: Most agents offer APIs or webhooks. Integration usually involves connecting the agent to your CRM, database, or communication channels like Slack/Teams.
+      a: "Большинство агентов предлагают API или вебхуки. Интеграция обычно включает подключение агента к вашей CRM, базе данных или каналам связи, таким как Slack/Teams."
     },
     {
-      q: "What are the limitations of AI agents?",
-      a: "They can hallucinate (make up facts), get stuck in loops, or struggle with highly ambiguous instructions that require human intuition."
+      // EN: What are the limitations of AI agents?
+      q: "Каковы ограничения ИИ-агентов?",
+      // EN: They can hallucinate (make up facts), get stuck in loops, or struggle with highly ambiguous instructions that require human intuition.
+      a: "Они могут галлюцинировать (выдумывать факты), зацикливаться или испытывать трудности с неоднозначными инструкциями, требующими человеческой интуиции."
     },
     {
-      q: "How is the future landscape of AI agents evolving?",
-      a: "We are moving towards multi-modal agents (vision/voice) and 'Agentic Workflows' where teams of agents collaborate to run entire business departments."
+      // EN: How is the future landscape of AI agents evolving?
+      q: "Как развивается будущее ИИ-агентов?",
+      // EN: We are moving towards multi-modal agents (vision/voice) and 'Agentic Workflows' where teams of agents collaborate to run entire business departments.
+      a: "Мы движемся к мультимодальным агентам (зрение/голос) и 'агентным рабочим процессам', где команды агентов сотрудничают для управления целыми отделами бизнеса."
     },
     {
-      q: "How do AI Agents compare to traditional automation tools?",
-      a: "Traditional automation (RPA) requires strict rules. AI Agents are flexible and can handle unstructured data and unexpected variations in the workflow."
+      // EN: How do AI Agents compare to traditional automation tools?
+      q: "Как ИИ-агенты сравниваются с традиционными инструментами автоматизации?",
+      // EN: Traditional automation (RPA) requires strict rules. AI Agents are flexible and can handle unstructured data and unexpected variations in the workflow.
+      a: "Традиционная автоматизация (RPA) требует строгих правил. ИИ-агенты гибки и справляются с неструктурированными данными и неожиданными отклонениями в рабочем процессе."
     },
     {
-      q: "What programming languages are used to build AI Agents?",
-      a: "Python is the dominant language due to its rich AI ecosystem (LangChain, PyTorch), followed by TypeScript/JavaScript for web-based implementations."
+      // EN: What programming languages are used to build AI Agents?
+      q: "Какие языки программирования используются для создания ИИ-агентов?",
+      // EN: Python is the dominant language due to its rich AI ecosystem (LangChain, PyTorch), followed by TypeScript/JavaScript for web-based implementations.
+      a: "Python — доминирующий язык благодаря богатой экосистеме ИИ (LangChain, PyTorch), за ним следуют TypeScript/JavaScript для веб-реализаций."
     },
     {
-      q: "What's the difference between AI Agents and autonomous agents?",
-      a: "The terms are often used interchangeably, but 'autonomous' emphasizes the ability to operate for long periods without any human prompt after the initial goal setting."
+      // EN: What's the difference between AI Agents and autonomous agents?
+      q: "В чём разница между ИИ-агентами и автономными агентами?",
+      // EN: The terms are often used interchangeably, but 'autonomous' emphasizes the ability to operate for long periods without any human prompt after the initial goal setting.
+      a: "Эти термины часто используются как синонимы, но 'автономный' подчёркивает способность работать длительное время без вмешательства человека после начальной постановки цели."
     },
     {
-      q: "How secure are AI Agents when handling sensitive data?",
-      a: "Security depends on the deployment. Enterprise solutions offer on-premise hosting or SOC2 compliance to ensure data doesn't train public models."
+      // EN: How secure are AI Agents when handling sensitive data?
+      q: "Насколько безопасны ИИ-агенты при работе с конфиденциальными данными?",
+      // EN: Security depends on the deployment. Enterprise solutions offer on-premise hosting or SOC2 compliance to ensure data doesn't train public models.
+      a: "Безопасность зависит от развёртывания. Корпоративные решения предлагают локальный хостинг или соответствие SOC2, чтобы данные не использовались для обучения публичных моделей."
     },
     {
-      q: "What is agentic AI and how does it relate to AI Agents?",
-      a: "Agentic AI refers to the broader capability of AI systems to demonstrate agency—making choices and acting in the world—which is the core function of an AI Agent."
+      // EN: What is agentic AI and how does it relate to AI Agents?
+      q: "Что такое агентный ИИ и как он связан с ИИ-агентами?",
+      // EN: Agentic AI refers to the broader capability of AI systems to demonstrate agency—making choices and acting in the world—which is the core function of an AI Agent.
+      a: "Агентный ИИ — это более широкая способность систем ИИ проявлять самостоятельность — принимать решения и действовать в мире, что является основной функцией ИИ-агента."
     },
   ]
 ]
@@ -148,19 +192,20 @@ export function FAQSection() {
             </Badge>
           </div>
 
-          {/* Title: "Frequently Asked Questions About AI Agents" */}
+          {/* EN: Frequently Asked Questions About AI Agents */}
           <h2 className="text-5xl font-normal text-gray-900 tracking-tight mb-4">
-            Frequently Asked Questions About{' '}
+            Часто задаваемые вопросы об{' '}
             <span className="relative inline-block font-bold">
-              AI Agents
+              ИИ-агентах
               {/* Gạch chân màu xanh nõn chuối #bef264 */}
               <span className="absolute bottom-1 left-0 w-full h-3 bg-[#bef264] -z-10 transform -rotate-1"></span>
             </span>{' '}
 
           </h2>
 
+          {/* EN: Everything you need to know about our AI agents and how they can transform your workflow. */}
           <p className="text-gray-500 mt-4 text-lg font-light">
-            Everything you need to know about our AI agents and how they can transform your workflow.
+            Всё, что вам нужно знать о наших ИИ-агентах и о том, как они могут преобразить ваш рабочий процесс.
           </p>
         </div>
 

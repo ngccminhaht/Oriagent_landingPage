@@ -48,7 +48,7 @@ export default function ChangeLogPage() {
             </DialogTrigger>
             <DialogContent className="sm:max-w-md">
               <DialogHeader>
-                <DialogTitle className="text-center text-xl">Share site</DialogTitle>
+                <DialogTitle className="text-center text-xl">{/* EN: Share site */}Поделиться сайтом</DialogTitle>
               </DialogHeader>
               <div className="flex flex-col gap-4 pb-4 pt-3 ">
                 <div className="rounded-xl border bg-muted/20 p-4">
@@ -70,7 +70,7 @@ export default function ChangeLogPage() {
                   <Input readOnly value="https://oriagent.com/changelog" className="flex-1 bg-muted/10" />
                   <Button className="bg-blue-600 hover:bg-blue-700 text-white">
                     <LinkIcon className="mr-2 h-4 w-4" />
-                    Copy URL
+                    {/* EN: Copy URL */}Копировать URL
                   </Button>
                 </div>
 
@@ -110,11 +110,13 @@ export default function ChangeLogPage() {
             <DropdownMenuContent align="end" className="w-56">
               <DropdownMenuItem>
                 <ArrowUpRight className="mr-2 h-4 w-4" />
-                View original page
+                {/* EN: View original page */}Посмотреть оригинал
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem className="text-red-600 focus:text-red-600">Report page</DropdownMenuItem>
-              <DropdownMenuItem>Cookie settings</DropdownMenuItem>
+              {/* EN: Report page */}
+              <DropdownMenuItem className="text-red-600 focus:text-red-600">Пожаловаться</DropdownMenuItem>
+              {/* EN: Cookie settings */}
+              <DropdownMenuItem>Настройки cookie</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
@@ -124,7 +126,7 @@ export default function ChangeLogPage() {
             variant="ghost"
             className="ml-2 h-8 gap-1.5 px-2 text-xs font-medium text-muted-foreground hover:bg-muted/50 border border-transparent hover:border-border"
           >
-            Made with
+{/* EN: Made with */}Сделано с
             <span className="flex h-4 w-4 items-center justify-center rounded-[2px] bg-black text-[10px] font-bold text-white">
               N
             </span>
@@ -155,10 +157,12 @@ export default function ChangeLogPage() {
 
         {/* Title Section */}
         <div className="mb-12 space-y-6">
-          <h1 className="text-4xl font-bold tracking-tight text-[#37352f] sm:text-5xl">Change log</h1>
+          {/* EN: Change log */}
+          <h1 className="text-4xl font-bold tracking-tight text-[#37352f] sm:text-5xl">Журнал изменений</h1>
           <div className="space-y-4 text-lg text-[#37352f]/80">
+            {/* EN: We'll do our best to keep you updated on all that is happening behind the scene. Looking forward to taking you along the journey. */}
             <p className="leading-relaxed">
-              We'll do our best to keep you updated on all that is happening behind the scene. Looking forward to taking you along the journey.
+              Мы сделаем всё возможное, чтобы держать вас в курсе всего, что происходит за кулисами. С нетерпением ждём возможности разделить этот путь с вами.
             </p>
             <Link
               href="#"
@@ -179,12 +183,13 @@ export default function ChangeLogPage() {
             <div className="mb-4 flex flex-wrap items-baseline gap-2">
               <span className="text-muted-foreground">@July 8, 2025</span>
               <span className="text-muted-foreground">—</span>
-              <h2 className="text-xl font-semibold text-[#37352f]">Flows are live</h2>
+              <h2 className="text-xl font-semibold text-[#37352f]">{/* EN: Flows are live */}Потоки запущены</h2>
             </div>
 
             <div className="space-y-6">
+              {/* EN: Visually build multi-step workflows by dragging and connecting agents, tools, and tasks... */}
               <p className="text-[#37352f]/80 leading-relaxed">
-                Visually build multi-step workflows by dragging and connecting agents, tools, and tasks. From simple sequences to complex logic—Flows let you orchestrate everything in one interactive canvas.
+                Визуально создавайте многошаговые рабочие процессы, перетаскивая и соединяя агентов, инструменты и задачи. От простых последовательностей до сложной логики — Потоки позволяют оркестрировать всё на одном интерактивном холсте.
               </p>
 
               <div className="overflow-hidden rounded-xl border bg-muted/10 shadow-sm">
@@ -207,18 +212,22 @@ export default function ChangeLogPage() {
             <div className="mb-4 flex flex-wrap items-baseline gap-2">
               <span className="text-muted-foreground">@June 28, 2025</span>
               <span className="text-muted-foreground">—</span>
-              <h2 className="text-xl font-semibold text-[#37352f]">Teams are live</h2>
+              <h2 className="text-xl font-semibold text-[#37352f]">{/* EN: Teams are live */}Команды запущены</h2>
             </div>
 
             <div className="space-y-6">
+              {/* EN: Introducing Teams: combine multiple AI agents into coordinated units... */}
               <p className="text-[#37352f]/80 leading-relaxed">
-                Introducing Teams: combine multiple AI agents into coordinated units that pass information and execute complex, multi-step workflows together. Your AI just became collaborative.
+                Представляем Команды: объединяйте несколько ИИ-агентов в координированные группы, которые обмениваются информацией и выполняют сложные многошаговые процессы вместе. Ваш ИИ стал командным.
               </p>
               
               <ul className="list-disc pl-5 space-y-2 text-[#37352f]/80 leading-relaxed">
-                  <li><strong>Multi-agent coordination:</strong> Assign multiple agents to a single mission—each with its own role and specialty.</li>
-                  <li><strong>Chained tasks with smart handoff:</strong> One agent's output becomes the next agent's input—enabling deep, multi-stage reasoning.</li>
-                  <li><strong>Reusable blueprints:</strong> Save and deploy team configurations for repetitive research, writing, or scraping jobs.</li>
+                  {/* EN: Multi-agent coordination */}
+                  <li><strong>Мульти-агентная координация:</strong> Назначайте несколько агентов на одну миссию — каждый со своей ролью и специализацией.</li>
+                  {/* EN: Chained tasks with smart handoff */}
+                  <li><strong>Цепочка задач с умной передачей:</strong> Результат одного агента становится входом для следующего — глубокое многоэтапное рассуждение.</li>
+                  {/* EN: Reusable blueprints */}
+                  <li><strong>Повторно используемые шаблоны:</strong> Сохраняйте и запускайте конфигурации команд для повторяющихся задач исследований, написания или скрапинга.</li>
               </ul>
 
               <div className="overflow-hidden rounded-xl border bg-muted/10 shadow-sm">
@@ -241,12 +250,13 @@ export default function ChangeLogPage() {
             <div className="mb-4 flex flex-wrap items-baseline gap-2">
               <span className="text-muted-foreground">@June 6, 2025</span>
               <span className="text-muted-foreground">—</span>
-              <h2 className="text-xl font-semibold text-[#37352f]">15+ Tools Now Available for Agents</h2>
+              <h2 className="text-xl font-semibold text-[#37352f]">{/* EN: 15+ Tools Now Available for Agents */}15+ инструментов теперь доступны для агентов</h2>
             </div>
 
             <div className="space-y-6">
+              {/* EN: We've supercharged your agent toolkit... */}
               <p className="text-[#37352f]/80 leading-relaxed">
-                We've supercharged your agent toolkit. From scraping LinkedIn and Reddit to generating images and analyzing TikTok profiles—your agents can now access 15+ built-in tools to automate research, content, and competitive intel like never before.
+                Мы значительно расширили набор инструментов ваших агентов. От скрапинга LinkedIn и Reddit до генерации изображений и анализа профилей TikTok — ваши агенты теперь имеют доступ к 15+ встроенным инструментам для автоматизации исследований, контента и конкурентной аналитики как никогда раньше.
               </p>
               
               <div className="overflow-hidden rounded-xl border bg-muted/10 shadow-sm">
@@ -269,12 +279,13 @@ export default function ChangeLogPage() {
             <div className="mb-4 flex flex-wrap items-baseline gap-2">
               <span className="text-muted-foreground">@May 30, 2025</span>
               <span className="text-muted-foreground">—</span>
-              <h2 className="text-xl font-semibold text-[#37352f]">Model selection, leveled up</h2>
+              <h2 className="text-xl font-semibold text-[#37352f]">{/* EN: Model selection, leveled up */}Выбор модели — на новом уровне</h2>
             </div>
 
             <div className="space-y-6">
+              {/* EN: We've redesigned the model picker for clarity and speed... */}
               <p className="text-[#37352f]/80 leading-relaxed">
-                We've redesigned the model picker for clarity and speed. Easily compare model strengths, context limits, and performance tags like Fast, Reasoning, or Powerful. Choose what fits your task—GPT‑4.1, Claude, Grok, XAI, and more.
+                Мы переработали выбор моделей для наглядности и скорости. Легко сравнивайте сильные стороны моделей, лимиты контекста и метки производительности — Быстрая, Рассуждающая или Мощная. Выбирайте то, что подходит для вашей задачи — GPT‑4.1, Claude, Grok, XAI и другие.
               </p>
 
               <div className="overflow-hidden rounded-xl border bg-muted/10 shadow-sm">
@@ -297,12 +308,13 @@ export default function ChangeLogPage() {
             <div className="mb-4 flex flex-wrap items-baseline gap-2">
               <span className="text-muted-foreground">@May 27, 2025</span>
               <span className="text-muted-foreground">—</span>
-              <h2 className="text-xl font-semibold text-[#37352f]">Clearer Agent Team Execution</h2>
+              <h2 className="text-xl font-semibold text-[#37352f]">{/* EN: Clearer Agent Team Execution */}Более понятное выполнение командных задач</h2>
             </div>
 
             <div className="space-y-6">
+              {/* EN: We upgraded how team agent executions are displayed... */}
               <p className="text-[#37352f]/80 leading-relaxed">
-                We upgraded how team agent executions are displayed. You'll now see input variables, agent roles, task flow, and real-time progress in one glanceable view. Cleaner, clearer, and easier to follow.
+                Мы улучшили отображение выполнения командных задач агентов. Теперь вы видите входные переменные, роли агентов, поток задач и прогресс в реальном времени в одном обзорном виде. Чище, понятнее и проще для отслеживания.
               </p>
 
               <div className="overflow-hidden rounded-xl border bg-muted/10 shadow-sm">

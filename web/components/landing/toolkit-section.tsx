@@ -5,33 +5,33 @@ export function ToolkitSection() {
   const features = [
     {
       icon: Bot,
-      title: 'Custom AI Agents',
-      description: "We don't give you a dashboard — we give you an AI agent that does the work for you. Built around your exact workflow. Tailored for your team.",
+      title: 'Свои ИИ-агенты', // EN: Custom AI Agents
+      description: 'Мы не даём вам панель управления — мы даём ИИ-агента, который выполняет работу за вас. Создан под ваш процесс. Адаптирован под вашу команду.',
     },
     {
       icon: Zap,
-      title: 'Workflow Automation',
-      description: 'From onboarding flows to multi-step marketing ops — if it\'s repeatable, we automate it. Fully custom. Fully hands-off.',
+      title: 'Автоматизация процессов', // EN: Workflow Automation
+      description: 'От онбординга до многошаговых маркетинговых операций — если это повторяемо, мы автоматизируем. Полностью кастомно. Полностью без участия.',
     },
     {
       icon: Workflow,
-      title: 'Seamless Integrations',
-      description: 'Your agent connects to the tools you already use — CRMs, email platforms, databases, docs. No rip and replace.',
+      title: 'Бесшовные интеграции', // EN: Seamless Integrations
+      description: 'Ваш агент подключается к инструментам, которые вы уже используете — CRM, почтовые платформы, базы данных, документы. Без замены существующего.',
     },
     {
       icon: Database,
-      title: 'Data Analysis on Autopilot',
-      description: 'Let your agent handle the numbers. Get instant insights from every data silo — without touching a spreadsheet.',
+      title: 'Автоматический анализ данных', // EN: Data Analysis on Autopilot
+      description: 'Пусть ваш агент работает с цифрами. Получайте мгновенные инсайты из каждого источника данных — без таблиц.',
     },
     {
       icon: ChartColumnIncreasing,
-      title: 'Performance Optimization',
-      description: 'We don\'t just build and bounce. We monitor, refine, and upgrade your agents for better speed, accuracy, and ROI.',
+      title: 'Оптимизация производительности', // EN: Performance Optimization
+      description: 'Мы не просто создаём и уходим. Мы отслеживаем, улучшаем и обновляем ваших агентов для лучшей скорости, точности и ROI.',
     },
     {
       icon: Users,
-      title: 'Dedicated Support',
-      description: 'You get a human in the loop — always. Strategy calls, implementation help, and ongoing guidance from our AI automation experts.',
+      title: 'Выделенная поддержка', // EN: Dedicated Support
+      description: 'У вас всегда есть человек на связи. Стратегические звонки, помощь во внедрении и постоянное сопровождение от наших экспертов по ИИ-автоматизации.',
     },
   ]
 
@@ -41,13 +41,16 @@ export function ToolkitSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-lime-300 text-lime-900 hover:bg-lime-400">
-            AI Toolkit
+            {/* EN: AI Toolkit */}
+            ИИ-инструменты
           </Badge>
+          {/* EN: Your Team of AI Agents, Without the Overhead */}
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Your Team of AI Agents, Without the Overhead
+            Ваша команда ИИ-агентов, без накладных расходов
           </h2>
+          {/* EN: Every service in our Done-For-You plan is designed to automate the busywork, amplify your output, and free your team to do what they do best. */}
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Every service in our Done-For-You plan is designed to automate the busywork, amplify your output, and free your team to do what they do best.
+            Каждый сервис в нашем плане «под ключ» создан для автоматизации рутины, усиления результатов и освобождения вашей команды для главного.
           </p>
         </div>
 

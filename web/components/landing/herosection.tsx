@@ -13,25 +13,29 @@ export function HeroSection() {
         <div className="flex justify-center mb-6">
           <Badge variant="outline" className="bg-purple-100 text-purple-700 border-purple-200">
             <span className="w-2 h-2 bg-purple-600 rounded-full mr-2 inline-block"></span>
-            Done for you AI automation
+            {/* EN: Done for you AI automation */}
+            ИИ-автоматизация под ключ
           </Badge>
         </div>
 
         {/* Main Headline */}
         <div className="mb-6">
           <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-balance">
-            Show us your workflow.
+            {/* EN: Show us your workflow. */}
+            Покажите нам ваш рабочий процесс.
           </h1>
           <h2 className="text-5xl sm:text-6xl font-bold text-balance">
             <span className="bg-yellow-300 px-2 py-1 rounded-sm">
-              We'll automate it with AI Agents.
+              {/* EN: We'll automate it with AI Agents. */}
+              Мы автоматизируем это с помощью ИИ-агентов.
             </span>
           </h2>
         </div>
 
         {/* Subheading */}
+        {/* EN: From content ops to customer support — we custom-build AI automations that save hours, cut costs, and run 24/7. One call. One week. Done for you. */}
         <p className="text-gray-600 text-lg sm:text-xl mb-8 max-w-2xl mx-auto text-balance">
-          From content ops to customer support — we custom-build AI automations that save hours, cut costs, and run 24/7. One call. One week. <span className="font-semibold">Done for you.</span>
+          От контент-операций до поддержки клиентов — мы создаём кастомные ИИ-автоматизации, которые экономят часы, сокращают расходы и работают 24/7. Один звонок. Одна неделя. <span className="font-semibold">Готово.</span>
         </p>
 
         {/* CTA Buttons */}
@@ -46,7 +50,8 @@ export function HeroSection() {
               <span className="mr-2">
                 <PhoneCall />
               </span>
-              Book a call
+              {/* EN: Book a call */}
+              Записаться на звонок
             </Button>
 
           </a>
@@ -61,7 +66,8 @@ export function HeroSection() {
               <span className="mr-2">
                 <Mail />
               </span>
-              Email us
+              {/* EN: Email us */}
+              Напишите нам
             </Button>
 
           </a>
@@ -95,7 +101,8 @@ export function HeroSection() {
           </div>
           <div className="text-sm">
             <p className="font-semibold text-gray-900">2,000+</p>
-            <p className="text-gray-600">happy users</p>
+            {/* EN: happy users */}
+            <p className="text-gray-600">довольных пользователей</p>
           </div>
         </div>
       </div>

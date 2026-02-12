@@ -61,9 +61,11 @@ export const InsightChart = () => {
     <div className="w-full max-w-[800px] p-6 bg-white rounded-3xl shadow-sm border border-gray-100 ">
       {/* Header Text */}
       <div className="text-center mb-4">
-        <h3 className="text-lg font-semibold text-gray-800">Instant Insight Reporting</h3>
+        {/* EN: Instant Insight Reporting */}
+        <h3 className="text-lg font-semibold text-gray-800">Мгновенные аналитические отчёты</h3>
+        {/* EN: Transform raw data into clear insights in seconds. Empower smarter decisions with real-time, always-learning intelligence */}
         <p className="text-sm text-gray-500 mt-1">
-          Transform raw data into clear insights in seconds. Empower smarter decisions with real-time, always-learning intelligence
+          Превращайте сырые данные в чёткие инсайты за секунды. Принимайте более умные решения с помощью интеллекта, который учится в реальном времени
         </p>
       </div>
 

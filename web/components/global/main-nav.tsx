@@ -67,20 +67,21 @@ export function MainNav() {
   }, [isMobileMenuOpen]);
 
   // Dữ liệu menu
+  // EN: Navigation menu items
   const navItems: NavItem[] = [
-    { label: "Solutions", dropdown: false, href: "/done-for-you" },
+    { label: "Решения", dropdown: false, href: "/done-for-you" }, // EN: Solutions
     {
-      label: "Content",
+      label: "Контент", // EN: Content
       dropdown: true,
       links: [
-        { href: "/blog", label: "Blog", description: "Bài viết chuyên sâu", icon: BookOpen },
-        { href: "/use-cases", label: "Use Cases", description: "Ví dụ ứng dụng thực tế", icon: Target },
-        { href: "/templates", label: "Template", description: "Các mẫu sẵn có", icon: LayoutTemplate },
-        { href: "/legal", label: "Legal", description: "Thông tin pháp lý", icon: ShieldCheck },
+        { href: "/blog", label: "Блог", description: "Экспертные статьи", icon: BookOpen }, // EN: Blog / In-depth articles
+        { href: "/use-cases", label: "Кейсы", description: "Примеры реального применения", icon: Target }, // EN: Use Cases / Real-world examples
+        { href: "/templates", label: "Шаблоны", description: "Готовые шаблоны", icon: LayoutTemplate }, // EN: Templates / Ready-made templates
+        { href: "/legal", label: "Правовая информация", description: "Юридическая информация", icon: ShieldCheck }, // EN: Legal / Legal information
       ]
     },
-    { label: "Change log", dropdown: false, href: "/changelog" },
-    { label: "Pricing", dropdown: false, href: "/pricing" },
+    { label: "Обновления", dropdown: false, href: "/changelog" }, // EN: Change log
+    { label: "Цены", dropdown: false, href: "/pricing" }, // EN: Pricing
   ];
   
   // Dữ liệu menu
@@ -147,12 +148,13 @@ export function MainNav() {
                 variant="outline"
                 className="bg-transparent border-zinc-400 text-zinc-800 hover:bg-zinc-900 hover:text-white rounded-full px-6 h-9 text-sm font-normal transition-all"
               >
-                Sign In
+                {/* EN: Sign In */}
+                Войти
               </Button>
             </Link>
           </div>
 
-          {/* Không còn SignInModal ở đây nữa */}
+          {/* Кнопка Sign In убрана */}}
 
           {/* Mobile Menu Trigger */}
           <button
@@ -241,7 +243,8 @@ export function MainNav() {
                   variant="outline"
                 >
                   <User className="h-4 w-4" strokeWidth={1.5} />
-                  Sign In
+                  {/* EN: Sign In */}
+                  Войти
                 </Button>
               </Link>
             </div>

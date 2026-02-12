@@ -22,7 +22,7 @@ export function PricingSection() {
   // --- LOGIC ANIMATION CHỮ (Faster/Better) ---
   const [displayText, setDisplayText] = useState("Faster");
   const [fadeOut, setFadeOut] = useState(false);
-  const words = ["Faster", "Better"];
+  const words = ["Быстрее", "Лучше"]; // EN: Faster, Better
 
   useEffect(() => {
     let currentIndex = 0; // Khai báo bên trong để closure của interval nắm giữ đúng giá trị
@@ -44,21 +44,24 @@ export function PricingSection() {
       id: 1,
       name: 'Charlie',
       rating: 5,
-      text: 'The integration capabilities with my existing tools made adoption seamless. Every update brings new valuable features.',
+      // EN: The integration capabilities with my existing tools made adoption seamless. Every update brings new valuable features.
+      text: 'Возможности интеграции с моими существующими инструментами сделали внедрение плавным. Каждое обновление приносит новые ценные функции.',
       image: 'person1.png'
     },
     {
       id: 2,
       name: 'Sarah',
       rating: 5,
-      text: 'This platform has transformed how we handle our workflows. The AI agents are incredibly smart and responsive.',
+      // EN: This platform has transformed how we handle our workflows. The AI agents are incredibly smart and responsive.
+      text: 'Эта платформа изменила наш подход к рабочим процессам. ИИ-агенты невероятно умные и отзывчивые.',
       image: 'person2.png'
     },
     {
       id: 3,
       name: 'Marcus',
       rating: 5,
-      text: 'Outstanding support team and continuous improvements. Worth every penny for the time savings alone.',
+      // EN: Outstanding support team and continuous improvements. Worth every penny for the time savings alone.
+      text: 'Отличная команда поддержки и постоянные улучшения. Стоит каждого рубля только за экономию времени.',
       image: 'person3.png'
     }
   ];
@@ -81,10 +84,13 @@ export function PricingSection() {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <Badge className="mb-4 bg-lime-200 text-gray-900 hover:bg-lime-300">Plans to suit</Badge>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">Choose your plan</h2>
+          {/* EN: Plans to suit */}
+          <Badge className="mb-4 bg-lime-200 text-gray-900 hover:bg-lime-300">Подходящие планы</Badge>
+          {/* EN: Choose your plan */}
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4">Выберите свой план</h2>
+          {/* EN: Our AI automation Done For You plans, are designed to help you get the most out of your AI agent. We offer two plans to suit your needs. */}
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our AI automation Done For You plans, are designed to help you get the most out of your AI agent. We offer two plans to suit your needs.
+            Наши планы ИИ-автоматизации «Под ключ» разработаны, чтобы помочь вам максимально эффективно использовать ИИ-агента. Мы предлагаем два плана под ваши потребности.
           </p>
         </div>
 
@@ -93,8 +99,8 @@ export function PricingSection() {
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full max-w-6xl px-4 sm:px-6 lg:px-8">
 
             <TabsList className="grid w-full grid-cols-2 max-w-xl mx-auto mb-8">
-              <TabsTrigger value="basic">Basic</TabsTrigger>
-              <TabsTrigger value="advanced">Advanced</TabsTrigger>
+              <TabsTrigger value="basic">{/* EN: Basic */}Базовый</TabsTrigger>
+              <TabsTrigger value="advanced">{/* EN: Advanced */}Продвинутый</TabsTrigger>
             </TabsList>
 
             {/* 2. Tabs Content - BASIC */}
@@ -108,47 +114,58 @@ export function PricingSection() {
                   <div className="p-8 text-black flex flex-col h-full">
                     {/* Badges */}
                     <div className="flex gap-2 mb-6">
-                      <Badge className="bg-black text-white hover:bg-gray-900">Custom Solution</Badge>
-                      <Badge className="bg-green-400 text-black hover:bg-green-500">Core Automation</Badge>
+                      {/* EN: Custom Solution */}
+                      <Badge className="bg-black text-white hover:bg-gray-900">Индивидуальное решение</Badge>
+                      {/* EN: Core Automation */}
+                      <Badge className="bg-green-400 text-black hover:bg-green-500">Базовая автоматизация</Badge>
                     </div>
 
                     {/* Title & Description */}
-                    <h3 className="text-3xl font-bold mb-2">Essential AI Workflow</h3>
-                    <p className="text-lg mb-6 leading-relaxed">For Growing Teams</p>
+                    {/* EN: Essential AI Workflow */}
+                    <h3 className="text-3xl font-bold mb-2">Основной ИИ-процесс</h3>
+                    {/* EN: For Growing Teams */}
+                    <p className="text-lg mb-6 leading-relaxed">Для растущих команд</p>
+                    {/* EN: Perfect for businesses ready to automate 1-3 core processes. Get a custom AI solution built by experts in 30-60 days. */}
                     <p className="text-sm mb-6 opacity-90">
-                      Perfect for businesses ready to automate 1-3 core processes. Get a custom AI solution built by experts in 30-60 days.
+                      Идеально для бизнеса, готового автоматизировать 1–3 ключевых процесса. Получите индивидуальное ИИ-решение от экспертов за 30–60 дней.
                     </p>
 
                     {/* Features */}
                     <div className="space-y-4 mb-8 flex-grow">
                       <div className="flex items-start gap-3">
                         <PhoneCall className="w-5 h-5 text-green-600" />
-                        <span className="text-sm">30-min strategy call</span>
+                        {/* EN: 30-min strategy call */}
+                        <span className="text-sm">Стратегический звонок 30 мин</span>
                       </div>
 
                       <div className="flex items-start gap-3">
                         <Settings className="w-5 h-5 text-blue-600" />
-                        <span className="text-sm">1 custom workflow per month</span>
+                        {/* EN: 1 custom workflow per month */}
+                        <span className="text-sm">1 индивидуальный процесс в месяц</span>
                       </div>
 
                       <div className="flex items-start gap-3">
                         <Rocket className="w-5 h-5 text-purple-600" />
-                        <span className="text-sm">Launch + team training session</span>
+                        {/* EN: Launch + team training session */}
+                        <span className="text-sm">Запуск + обучение команды</span>
                       </div>
 
                       <div className="flex items-start gap-3">
                         <Pencil className="w-5 h-5 text-orange-600" />
-                        <span className="text-sm">2 revision rounds included</span>
+                        {/* EN: 2 revision rounds included */}
+                        <span className="text-sm">2 раунда правок включены</span>
                       </div>
 
                       <div className="flex items-start gap-3">
                         <Timer className="w-5 h-5 text-red-600" />
-                        <span className="text-sm">48-hour response time</span>
+                        {/* EN: 48-hour response time */}
+                        <span className="text-sm">Время ответа 48 часов</span>
                       </div>
 
                       <div className="flex items-start gap-3">
                         <Link className="w-5 h-5 text-indigo-600" />
-                        <span className="text-sm">Standard API integrations</span>
+                        {/* EN: Standard API integrations */}
+                        <span className="text-sm">Стандартные API-интеграции</span>
                       </div>
 
                     </div>
@@ -156,9 +173,9 @@ export function PricingSection() {
                     {/* Pricing */}
                     <div className="mb-6 mt-auto">
                       <p className="text-5xl font-bold">$1,999</p>
-                      <p className="text-sm opacity-75">/month</p>
+                      <p className="text-sm opacity-75">/месяц</p> {/* EN: /month */}
                       <p className="text-xs mt-2 opacity-75">
-                        <span className="line-through">$2,999</span> <span className="text-green-200">50% OFF</span>
+                        <span className="line-through">$2,999</span> <span className="text-green-200">{/* EN: 50% OFF */}Скидка 50%</span>
                       </p>
                     </div>
 
@@ -174,7 +191,8 @@ export function PricingSection() {
                       >
                         <Button className="w-full gap-2 bg-black text-white hover:bg-gray-900 rounded-full relative flex items-center justify-center">
                           <PhoneCall className="w-4 h-4 " />
-                          <span>Book a call</span>
+                          {/* EN: Book a call */}
+                          <span>Записаться на звонок</span>
                         </Button>
                       </a>
 
@@ -190,7 +208,8 @@ export function PricingSection() {
                           className="w-full bg-white text-black hover:bg-gray-900 hover:bg-opacity-20 rounded-full flex items-center justify-center gap-2"
                         >
                           <Mail className="h-4 w-4" />
-                          <span>Email us</span>
+                          {/* EN: Email us */}
+                          <span>Напишите нам</span>
                         </Button>
                       </a>
 
@@ -205,7 +224,8 @@ export function PricingSection() {
 
                 {/* Features & Testimonials Card - Right (Basic) */}
                 <Card className="md:col-span-1 rounded-2xl border-0 shadow-xl p-8 h-full flex flex-col">
-                  <h4 className="text-2xl font-bold mb-6 text-gray-900">Core AI Automation Features</h4>
+                  {/* EN: Core AI Automation Features */}
+                  <h4 className="text-2xl font-bold mb-6 text-gray-900">Основные функции ИИ-автоматизации</h4>
 
                   {/* Features Grid */}
                   <div className="grid grid-cols-2 gap-4 mb-8">
@@ -213,22 +233,22 @@ export function PricingSection() {
                       <div className="flex items-start gap-3">
                         <span className="text-lg">⏱️</span>
                         <div>
-                          <p className="text-xs text-gray-500">Save</p>
-                          <p className="font-semibold text-sm">10-15 hrs/employee/week</p>
+                          <p className="text-xs text-gray-500">{/* EN: Save */}Экономия</p>
+                          <p className="font-semibold text-sm">{/* EN: 10-15 hrs/employee/week */}10–15 ч/сотрудник/неделю</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="text-lg">📊</span>
                         <div>
-                          <p className="text-xs text-gray-500">Reduce</p>
-                          <p className="font-semibold text-sm">manual tasks by 40%</p>
+                          <p className="text-xs text-gray-500">{/* EN: Reduce */}Сокращение</p>
+                          <p className="font-semibold text-sm">{/* EN: manual tasks by 40% */}ручных задач на 40%</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="text-lg">🔗</span>
                         <div>
-                          <p className="text-xs text-gray-500">Integration</p>
-                          <p className="font-semibold text-sm">3-5 app integrations</p>
+                          <p className="text-xs text-gray-500">{/* EN: Integration */}Интеграция</p>
+                          <p className="font-semibold text-sm">{/* EN: 3-5 app integrations */}3–5 интеграций приложений</p>
                         </div>
                       </div>
                     </div>
@@ -236,22 +256,22 @@ export function PricingSection() {
                       <div className="flex items-start gap-3">
                         <span className="text-lg">⚙️</span>
                         <div>
-                          <p className="text-xs text-gray-500">Workflow</p>
-                          <p className="font-semibold text-sm">1-3 core automation</p>
+                          <p className="text-xs text-gray-500">{/* EN: Workflow */}Процесс</p>
+                          <p className="font-semibold text-sm">{/* EN: 1-3 core automation */}1–3 базовых автоматизации</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="text-lg">📈</span>
                         <div>
-                          <p className="text-xs text-gray-500">Data</p>
-                          <p className="font-semibold text-sm">Standard processing</p>
+                          <p className="text-xs text-gray-500">{/* EN: Data */}Данные</p>
+                          <p className="font-semibold text-sm">{/* EN: Standard processing */}Стандартная обработка</p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
                         <span className="text-lg">🧠</span>
                         <div>
-                          <p className="text-xs text-gray-500">Intelligence</p>
-                          <p className="font-semibold text-sm">Multi-model</p>
+                          <p className="text-xs text-gray-500">{/* EN: Intelligence */}Интеллект</p>
+                          <p className="font-semibold text-sm">{/* EN: Multi-model */}Мульти-модель</p>
                         </div>
                       </div>
                     </div>
@@ -259,7 +279,8 @@ export function PricingSection() {
 
                   {/* Testimonials Section */}
                   <div className="border-t pt-6 mt-auto">
-                    <h5 className="text-lg font-semibold mb-4 text-gray-900">What our customers say</h5>
+                    {/* EN: What our customers say */}
+                    <h5 className="text-lg font-semibold mb-4 text-gray-900">Что говорят наши клиенты</h5>
 
                     {/* Đã fix: Hiển thị nội dung thật từ mảng testimonials */}
                     <div className="bg-gray-50 rounded-lg p-6 mb-4 min-h-[140px] flex flex-col justify-between">
@@ -303,19 +324,22 @@ export function PricingSection() {
                       <div className="inline-flex w-fit mb-8">
                         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800 border border-slate-700">
                           <div className="w-2 h-2 rounded-full bg-amber-400"></div>
-                          <span className="text-sm text-slate-300">White Glove Service</span>
+                          {/* EN: White Glove Service */}
+                          <span className="text-sm text-slate-300">Премиум-сервис</span>
                         </div>
                       </div>
 
                       {/* Heading */}
                       <div className="mb-8">
                         <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4 leading-tight">
-                          Enterprise AI Ecosystem.
+                          {/* EN: Enterprise AI Ecosystem. Built Around Your Workflow. */}
+                          Корпоративная ИИ-экосистема.
                           <br />
-                          Built Around Your Workflow.
+                          Построена под ваш процесс.
                         </h1>
+                        {/* EN: For fast-moving teams that need sophisticated automation across 5-15 processes... */}
                         <p className="text-slate-300 text-lg leading-relaxed">
-                          For fast-moving teams that need sophisticated automation across 5-15 processes. We design, build, and deploy intelligent agents that replace entire operational workflows — with precision and scale.
+                          Для динамичных команд, которым нужна сложная автоматизация 5–15 процессов. Мы проектируем, создаём и развёртываем интеллектуальных агентов, заменяющих целые операционные процессы — с точностью и масштабом.
                         </p>
                       </div>
 
@@ -323,48 +347,57 @@ export function PricingSection() {
                       <div className="space-y-4 mb-8">
                         <div className="flex items-start gap-3">
                           <Plus className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">Everything in Basic plan</span>
+                          {/* EN: Everything in Basic plan */}
+                          <span className="text-slate-300">Всё из Базового плана</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <Calendar className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">60-min deep-dive audit + roadmap</span>
+                          {/* EN: 60-min deep-dive audit + roadmap */}
+                          <span className="text-slate-300">Глубокий аудит 60 мин + дорожная карта</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <Zap className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">2 complex workflows per month</span>
+                          {/* EN: 2 complex workflows per month */}
+                          <span className="text-slate-300">2 сложных процесса в месяц</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <MessageSquare className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">Weekly strategy & optimization calls</span>
+                          {/* EN: Weekly strategy & optimization calls */}
+                          <span className="text-slate-300">Еженедельные стратегические звонки</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">Unlimited revision rounds</span>
+                          {/* EN: Unlimited revision rounds */}
+                          <span className="text-slate-300">Безлимитные правки</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <Clock className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">24-hour response time</span>
+                          {/* EN: 24-hour response time */}
+                          <span className="text-slate-300">Время ответа 24 часа</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <Zap className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">15+ enterprise integrations</span>
+                          {/* EN: 15+ enterprise integrations */}
+                          <span className="text-slate-300">15+ корпоративных интеграций</span>
                         </div>
                         <div className="flex items-start gap-3">
                           <Star className="w-5 h-5 text-amber-400 mt-1 flex-shrink-0" />
-                          <span className="text-slate-300">Dedicated AI engineer & PM team</span>
+                          {/* EN: Dedicated AI engineer & PM team */}
+                          <span className="text-slate-300">Выделенный ИИ-инженер и PM-команда</span>
                         </div>
                       </div>
 
                       {/* Pricing */}
                       <div className="mb-8">
-                        <p className="text-slate-400 text-sm mb-2">Starting at</p>
+                        {/* EN: Starting at */}
+                        <p className="text-slate-400 text-sm mb-2">От</p>
                         <div className="flex items-baseline gap-2 mb-2">
                           <span className="text-5xl font-bold text-white">$59,99</span>
-                          <span className="text-slate-400">/month</span>
+                          <span className="text-slate-400">/месяц</span> {/* EN: /month */}
                         </div>
                         <div className="flex items-center gap-3">
                           <span className="text-slate-500 line-through">$7,999</span>
-                          <span className="text-amber-400 font-semibold">25% Off</span>
+                          <span className="text-amber-400 font-semibold">{/* EN: 25% Off */}Скидка 25%</span>
                         </div>
                       </div>
 
@@ -378,7 +411,8 @@ export function PricingSection() {
                           >
                           <button className="w-full px-2 py-3 rounded-full bg-amber-400 text-slate-950 font-semibold hover:bg-amber-300 transition-colors flex items-center justify-center gap-2">
                             <Calendar className="w-4 h-4" />
-                            Book a call
+                            {/* EN: Book a call */}
+                            Записаться на звонок
                           </button>
                         </a>
 
@@ -390,14 +424,16 @@ export function PricingSection() {
                           >
                           <button className="flex-1 px-6 py-3 rounded-full border border-slate-700 text-slate-300 font-semibold hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
                             <Mail className="w-4 h-4" />
-                            Email us
+                            {/* EN: Email us */}
+                            Напишите нам
                           </button>
 
                           </a>
                       </div>
 
+                      {/* EN: Priority onboarding • 1 agent per week • Cancel anytime */}
                       <p className="text-xs text-slate-500 mt-4">
-                        Priority onboarding • 1 agent per week • Cancel anytime
+                        Приоритетный онбординг • 1 агент в неделю • Отмена в любое время
                       </p>
                     </div>
 

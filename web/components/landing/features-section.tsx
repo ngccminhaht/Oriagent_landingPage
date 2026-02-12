@@ -14,34 +14,41 @@ export function FeaturesSection() {
           <div className="lg:col-span-1">
             <Badge variant="outline" className="bg-red-100 text-red-600 border-red-200 mb-4">
               <span className="w-2 h-2 bg-red-600 rounded-full mr-2 inline-block"></span>
-              Problem
+              {/* EN: Problem */}
+              Проблема
             </Badge>
+            {/* EN: Less Busywork. */}
             <h2 className="text-4xl font-bold mb-4 text-balance">
-              Less Busywork.
+              Меньше рутины.
             </h2>
             <h3 className="text-4xl font-bold mb-6 text-balance">
 
               <span className="bg-yellow-300 px-2 py-2 rounded-sm shadow-xl">
-                More Breakthroughs.
+                {/* EN: More Breakthroughs. */}
+                Больше прорывов.
               </span>
             </h3>
+            {/* EN: You bring the workflow. We build teams of AI agents to automate it — so your team can focus on growth, not grunt work. */}
             <p className="text-gray-600 mb-6 text-sm leading-relaxed">
-              You bring the workflow. We build teams of AI agents to automate it — so your team can focus on growth, not grunt work.
+              Вы приносите рабочий процесс. Мы создаём команды ИИ-агентов для его автоматизации — чтобы ваша команда сосредоточилась на росте, а не на рутине.
             </p>
 
             {/* Benefits List */}
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <CalendarCheck className="text-blue-600 h-5 w-5 font-bold" />
-                <span className="text-gray-700 text-sm">Cut costs by up to 30%</span>
+                {/* EN: Cut costs by up to 30% */}
+                <span className="text-gray-700 text-sm">Сокращение затрат до 30%</span>
               </div>
               <div className="flex items-start gap-3">
                 <AlarmCheck className="text-orange-600 h-5 w-5 font-bold" />
-                <span className="text-gray-700 text-sm">Save 15+ hours per employee per week</span>
+                {/* EN: Save 15+ hours per employee per week */}
+                <span className="text-gray-700 text-sm">Экономия 15+ часов на сотрудника в неделю</span>
               </div>
               <div className="flex items-start gap-3">
                 <ChartBarIncreasing className="text-green-600 h-5 w-5 font-bold" />
-                <span className="text-gray-700 text-sm">Scale what works — without more headcount</span>
+                {/* EN: Scale what works — without more headcount */}
+                <span className="text-gray-700 text-sm">Масштабируйте то, что работает — без увеличения штата</span>
               </div>
             </div>
           </div>
@@ -52,27 +59,28 @@ export function FeaturesSection() {
             <Card className="p-6 border-0 bg-gradient-to-br from-gray-50 to-gray-100">
 
               <h3 className="text-xl font-bold mb-3 flex items-center gap-4">
-                <PhoneCall className="w-8 h-10 flex-shrink-0 text-green-500 " /> {/* Đặt class để điều chỉnh kích thước icon nếu cần */}
-                Book a Discovery Call
+                <PhoneCall className="w-8 h-10 flex-shrink-0 text-green-500 " />
+                {/* EN: Book a Discovery Call */}
+                Запишитесь на ознакомительный звонок
               </h3>
               <div className="text-gray-600 text-sm leading-relaxed space-y-3">
 
                 <div className="flex items-start gap-2">
-                  {/* Điều chỉnh kích thước icon nếu cần */}
                   <BadgeCheckIcon className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0 text-green-500 " />
-                  <span>No pressure, no prep. Just show us how you work — we'll spot what AI can take over.</span>
+                  {/* EN: No pressure, no prep. Just show us how you work — we'll spot what AI can take over. */}
+                  <span>Без давления, без подготовки. Просто покажите, как вы работаете — мы найдём, что может взять на себя ИИ.</span>
                 </div>
 
                 <div className="flex items-start gap-2">
-                  {/* Điều chỉnh kích thước icon nếu cần */}
                   <BadgeCheckIcon className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0 text-green-500" />
-                  <span>We map your workflow and build a custom AI agent to match. You review, we refine.</span>
+                  {/* EN: We map your workflow and build a custom AI agent to match. You review, we refine. */}
+                  <span>Мы картируем ваш процесс и создаём кастомного ИИ-агента. Вы проверяете, мы дорабатываем.</span>
                 </div>
 
                 <div className="flex items-start gap-2">
-                  {/* Điều chỉnh kích thước icon nếu cần */}
                   <BadgeCheckIcon className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0 text-green-500" />
-                  <span>We finalize the blueprint and define key metrics for success, ensuring the AI agent is ready for launch.</span>
+                  {/* EN: We finalize the blueprint and define key metrics for success, ensuring the AI agent is ready for launch. */}
+                  <span>Мы финализируем план и определяем ключевые метрики успеха, обеспечивая готовность ИИ-агента к запуску.</span>
                 </div>
 
               </div>
@@ -83,26 +91,27 @@ export function FeaturesSection() {
 
               <h3 className="text-xl font-bold mb-3 flex items-center gap-4">
                 <Rocket className="w-8 h-10 flex-shrink-0 text-orange-600" />
-                Launch to Scale
+                {/* EN: Launch to Scale */}
+                Запуск и масштабирование
               </h3>
               <div className="text-gray-600 text-sm leading-relaxed space-y-3">
 
                 <div className="flex items-start gap-2">
-                  {/* Điều chỉnh kích thước icon nếu cần */}
                   <BadgeCheckIcon className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0 text-orange-600" />
-                  <span>We deploy your AI agent in under a week. We handle all integration and initial setup for production use.</span>
+                  {/* EN: We deploy your AI agent in under a week. We handle all integration and initial setup for production use. */}
+                  <span>Мы развёртываем вашего ИИ-агента менее чем за неделю. Мы берём на себя всю интеграцию и начальную настройку.</span>
                 </div>
 
                 <div className="flex items-start gap-2">
-                  {/* Điều chỉnh kích thước icon nếu cần */}
                   <BadgeCheckIcon className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0 text-orange-600" />
-                  <span>You get ongoing support, updates, and optimization — ensuring the agent evolves with your business needs.</span>
+                  {/* EN: You get ongoing support, updates, and optimization — ensuring the agent evolves with your business needs. */}
+                  <span>Вы получаете постоянную поддержку, обновления и оптимизацию — агент развивается вместе с вашим бизнесом.</span>
                 </div>
 
                 <div className="flex items-start gap-2">
-                  {/* Điều chỉnh kích thước icon nếu cần */}
                   <BadgeCheckIcon className="w-5 h-5 text-gray-900 mt-1 flex-shrink-0 text-orange-600" />
-                  <span>We continuously monitor performance and identify opportunities to scale the solution across other workflows.</span>
+                  {/* EN: We continuously monitor performance and identify opportunities to scale the solution across other workflows. */}
+                  <span>Мы непрерывно отслеживаем производительность и находим возможности для масштабирования решения на другие процессы.</span>
                 </div>
 
               </div>
@@ -114,7 +123,8 @@ export function FeaturesSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left - The Mess */}
           <Card className="p-8 border border-gray-200">
-            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Juggle the mess</h3>
+            {/* EN: Juggle the mess */}
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Разгребайте хаос</h3>
             <div className="relative h-64 flex items-center justify-center">
               {/* Chaotic sticky notes */}
               <div className="space-y-2 relative w-full h-full">
@@ -148,18 +158,25 @@ export function FeaturesSection() {
 
           {/* Right - The Solution */}
           <Card className="p-8 border border-gray-200">
-            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Just build it with OriAgent</h3>
+            {/* EN: Just build it with OriAgent */}
+            <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">Просто создайте с OriAgent</h3>
             <div className="relative h-64 flex items-center justify-center">
               {/* Organized, colorful tags */}
               <div className="flex flex-col gap-3 items-center justify-center">
                 <div className="bg-yellow-200 text-yellow-900 px-4 py-2 rounded-full text-sm font-medium shadow-lg flex items-center gap-2">
-                  <Lightbulb className="w-5 h-5 flex-shrink-0 text-yellow-500 " /> You have an idea
+                  <Lightbulb className="w-5 h-5 flex-shrink-0 text-yellow-500 " />
+                  {/* EN: You have an idea */}
+                  У вас есть идея
                 </div>
                 <div className="bg-orange-200 text-orange-900 px-4 py-2 rounded-full text-sm font-medium shadow-lg flex items-center gap-2">
-                  <ZapIcon className="w-5 h-5 flex-shrink-0 text-orange-500 " /> We scope it in 30 mins
+                  <ZapIcon className="w-5 h-5 flex-shrink-0 text-orange-500 " />
+                  {/* EN: We scope it in 30 mins */}
+                  Мы оценим за 30 минут
                 </div>
                 <div className="bg-green-200 text-green-900 px-4 py-2 rounded-full text-sm font-medium shadow-lg flex items-center gap-2">
-                  <CalendarCheck className="w-5 h-5 flex-shrink-0 text-green-500 " /> You get your agent in 7 days
+                  <CalendarCheck className="w-5 h-5 flex-shrink-0 text-green-500 " />
+                  {/* EN: You get your agent in 7 days */}
+                  Вы получите агента за 7 дней
                 </div>
               </div>
             </div>

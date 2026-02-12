@@ -23,30 +23,35 @@ interface TrustSectionProps {
 const defaultFeatures: TrustFeature[] = [
   {
     icon: '🔒',
-    title: 'End-to-End Security for Every Automated Task',
+    title: 'Сквозная безопасность для каждой автоматизированной задачи', // EN: End-to-End Security for Every Automated Task
     description:
-      'Your AI Agents operate in a secure, encrypted environment. From task execution to data handling, every step is protected by default encryption. Security is no afterthought here.',
+      'Ваши ИИ-агенты работают в защищённой зашифрованной среде. От выполнения задач до обработки данных — каждый шаг защищён шифрованием по умолчанию.',
   },
   {
     icon: '🌍',
-    title: 'AI Agents That Scale With Your Team',
+    title: 'ИИ-агенты, которые масштабируются вместе с вашей командой', // EN: AI Agents That Scale With Your Team
     description:
-      'Whether you\'re a 5-person startup, 50-person agency, or 500-person enterprise, our AI Agents adapt to your workflows. Collaborate across teams, departments, regions, and grow predictably. The results? 5x faster delivery, 10x fewer errors, and peace of mind.',
+      'Будь вы стартап из 5 человек, агентство из 50 или корпорация из 500 — наши ИИ-агенты адаптируются к вашим процессам. Результат? В 5 раз быстрее, в 10 раз меньше ошибок и спокойствие.',
   },
 ]
 
 // Component chính được xuất (đã sửa từ Banner thành TrustSection và thêm logic state)
 export default function TrustSection({
-  leftTitle = 'End-to-End Security for Every Automated Task',
-  leftDescription = 'Your AI Agents operate in a secure, encrypted environment. From task execution to data handling, every step is protected by default encryption. Security is no afterthought here.',
-  rightTitle = 'AI Agents That Scale With Your Team',
-  rightDescription = 'Whether you\'re a 5-person startup, 50-person agency, or 500-person enterprise, our AI Agents adapt to your workflows. Collaborate across teams, departments, regions, and grow predictably. The results? 5x faster delivery, 10x fewer errors, and peace of mind.',
+  // EN: End-to-End Security for Every Automated Task
+  leftTitle = 'Сквозная безопасность для каждой автоматизированной задачи',
+  // EN: Your AI Agents operate in a secure, encrypted environment...
+  leftDescription = 'Ваши ИИ-агенты работают в защищённой зашифрованной среде. От выполнения задач до обработки данных — каждый шаг защищён шифрованием по умолчанию. Безопасность — не последняя мысль.',
+  // EN: AI Agents That Scale With Your Team
+  rightTitle = 'ИИ-агенты, которые масштабируются вместе с вашей командой',
+  // EN: Whether you're a 5-person startup...
+  rightDescription = 'Будь вы стартап из 5 человек, агентство из 50 или корпорация из 500 — наши ИИ-агенты адаптируются к вашим процессам. Работайте совместно между командами, отделами, регионами. Результат? В 5 раз быстрее, в 10 раз меньше ошибок и спокойствие.',
   features = defaultFeatures, // Prop features vẫn được giữ nhưng không được dùng trong JSX hiện tại
   ctaText = 'Work with us to make it right.', // Prop ctaText vẫn được giữ nhưng không được dùng trong JSX hiện tại
 }: TrustSectionProps) {
 
   // Logic xoay chữ (chuyển từ component Banner cũ vào đây)
-  const words = ["right.", "True."];
+  // EN: right./True.
+  const words = ["правильно.", "верно."];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -64,17 +69,21 @@ export default function TrustSection({
       <div className="max-w-6xl mx-auto mb-20">
         <div className="text-center mb-8">
           <Badge className="bg-gray-200 text-gray-800 hover:bg-gray-200">
-            Security
+            {/* EN: Security */}
+            Безопасность
           </Badge>
         </div>
+        {/* EN: Built for Trust. */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-          Built for Trust.
+          Создано для доверия.
         </h2>
+        {/* EN: Backed by Enterprise-Grade Security. */}
         <h3 className="text-3xl md:text-4xl text-center text-gray-700 mb-6">
-          Backed by Enterprise-Grade Security.
+          Подкреплено корпоративным уровнем безопасности.
         </h3>
+        {/* EN: Every AI Agent task is encrypted, isolated, and protected — on your workflows made safe, without ever risking your data, team, or reputation. */}
         <p className="text-center text-gray-600 max-w-2xl mx-auto">
-          Every AI Agent task is encrypted, isolated, and protected — on your workflows made safe, without ever risking your data, team, or reputation.
+          Каждая задача ИИ-агента зашифрована, изолирована и защищена — ваши процессы в безопасности без риска для ваших данных, команды или репутации.
         </p>
       </div>
 
@@ -115,8 +124,9 @@ export default function TrustSection({
 
       {/* CTA Section */}
       <div className="bg-green-700 rounded-2xl p-12 md:p-20 text-center min-h-[450px] flex items-center justify-center">
+        {/* EN: Work with us to make it right./True. */}
         <h3 className="text-3xl md:text-4xl font-bold text-white">
-          Work with us to make it{" "}
+          Работайте с нами, чтобы сделать это{" "}
           <span
             className="bg-lime-400 text-gray-900 px-3 py-1 rounded font-bold transition-opacity duration-500"
             style={{ opacity: 1 }}

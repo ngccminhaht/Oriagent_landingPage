@@ -13,8 +13,10 @@ interface Message {
 }
 
 const conversationScript: (Message & { delay: number })[] = [
-  { id: 1, type: "customer", content: "Hey, I need help with content strategy for my website. Can you suggest some SEO-friendly blog topics based on keyword research?", delay: 1000 },
-  { id: 2, type: "agent", content: "Based on my keyword research analysis, I recommend creating SEO blog content around \"sustainable gardening tips\" and \"indoor plant care\". These keywords have high search volume with moderate", delay: 1500 },
+  // EN: Hey, I need help with content strategy for my website. Can you suggest some SEO-friendly blog topics based on keyword research?
+  { id: 1, type: "customer", content: "Привет, мне нужна помощь с контент-стратегией для моего сайта. Можете предложить SEO-темы для блога на основе анализа ключевых слов?", delay: 1000 },
+  // EN: Based on my keyword research analysis, I recommend creating SEO blog content around "sustainable gardening tips" and "indoor plant care". These keywords have high search volume with moderate
+  { id: 2, type: "agent", content: "На основе моего анализа ключевых слов, я рекомендую создать SEO-контент по темам \"советы по экологичному садоводству\" и \"уход за комнатными растениями\". Эти ключевые слова имеют высокий объём поиска с умеренной", delay: 1500 },
 
 ];
 

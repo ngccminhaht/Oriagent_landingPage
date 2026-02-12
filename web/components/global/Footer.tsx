@@ -6,29 +6,29 @@ import React from "react";
 // Định nghĩa dữ liệu cho các cột liên kết trong Footer
 const footerLinks = [
   {
-    title: "Product",
+    title: "Продукт", // EN: Product
     links: [
-      { label: "Features", href: "/features" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "Updates", href: "/changelog" },
-      { label: "Integrations", href: "/integrations" }
+      { label: "Возможности", href: "/features" }, // EN: Features
+      { label: "Цены", href: "/pricing" }, // EN: Pricing
+      { label: "Обновления", href: "/changelog" }, // EN: Updates
+      { label: "Интеграции", href: "/integrations" } // EN: Integrations
     ]
   },
   {
-    title: "Company",
+    title: "Компания", // EN: Company
     links: [
-      { label: "About Us", href: "/about" },
-      { label: "Careers", href: "/careers" },
-      { label: "Blog", href: "/blog" },
-      { label: "Contact", href: "/contact" }
+      { label: "О нас", href: "/about" }, // EN: About Us
+      { label: "Карьера", href: "/careers" }, // EN: Careers
+      { label: "Блог", href: "/blog" }, // EN: Blog
+      { label: "Контакты", href: "/contact" } // EN: Contact
     ]
   },
   {
-    title: "Legal",
+    title: "Правовая информация", // EN: Legal
     links: [
-      { label: "Privacy Policy", href: "/privacy" },
-      { label: "Terms of Service", href: "/terms" },
-      { label: "Cookie Settings", href: "/cookies" }
+      { label: "Политика конфиденциальности", href: "/privacy" }, // EN: Privacy Policy
+      { label: "Условия использования", href: "/terms" }, // EN: Terms of Service
+      { label: "Настройки cookie", href: "/cookies" } // EN: Cookie Settings
     ]
   },
 ];
@@ -46,8 +46,9 @@ export function Footer() {
           {/* Cột 1: Logo và Mô tả */}
           <div className="col-span-2 md:col-span-1">
             <h3 className="text-xl font-bold mb-4">✨ AI Agent</h3>
+            {/* EN: Get more done without doing more. */}
             <p className="text-sm text-gray-600">
-              Get more done without doing more.
+              Делайте больше, не делая лишнего.
             </p>
           </div>
 
@@ -74,8 +75,9 @@ export function Footer() {
         </div>
 
         {/* Bản quyền (Copyright) */}
+        {/* EN: All rights reserved. */}
         <div className="mt-12 pt-6 border-t text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} AI Agent. All rights reserved.
+          &copy; {new Date().getFullYear()} AI Agent. Все права защищены.
         </div>
       </div>
     </footer>

@@ -49,45 +49,55 @@ interface AgentTemplate {
 const teamTemplates: TeamTemplate[] = [
   {
     id: "1",
-    title: "SEO Content Engine",
+    // EN: SEO Content Engine
+    title: "Движок SEO-контента",
+    // EN: End-to-end crew that discovers keywords, analyses SERP gaps, drafts long-form content, and polishes it for on-page SEO.
     description:
-      "End-to-end crew that discovers keywords, analyses SERP gaps, drafts long-form content, and polishes it for on-page SEO.",
+      "Команда полного цикла: находит ключевые слова, анализирует пробелы в SERP, создаёт длинный контент и оптимизирует его для on-page SEO.",
     members: 5,
     tasks: 5,
     tools: 6,
   },
   {
     id: "2",
-    title: "Social Trend Scraper Squad",
+    // EN: Social Trend Scraper Squad
+    title: "Команда сканирования трендов",
+    // EN: Scrape TikTok/Instagram for emerging trends, compute engagement insights, validate momentum, and generate creative hooks.
     description:
-      "Scrape TikTok/Instagram for emerging trends, compute engagement insights, validate momentum, and generate creative hooks.",
+      "Сканирует TikTok/Instagram на новые тренды, анализирует вовлечённость, проверяет динамику и генерирует креативные зацепки.",
     members: 4,
     tasks: 4,
     tools: 6,
   },
   {
     id: "3",
-    title: "Deep-Dive Research Hub",
+    // EN: Deep-Dive Research Hub
+    title: "Центр глубоких исследований",
+    // EN: Comprehensive research workflow that gathers authoritative sources, extracts facts, synthesizes insights, and crafts executive narratives.
     description:
-      "Comprehensive research workflow that gathers authoritative sources, extracts facts, synthesizes insights, and crafts executive narratives.",
+      "Комплексный исследовательский процесс: собирает авторитетные источники, извлекает факты, синтезирует инсайты и создаёт резюме.",
     members: 4,
     tasks: 4,
     tools: 6,
   },
   {
     id: "4",
-    title: "Lead Generation Engine",
+    // EN: Lead Generation Engine
+    title: "Движок генерации лидов",
+    // EN: Comprehensive B2B lead generation workflow that finds prospects, enriches contact data, and crafts personalized outreach.
     description:
-      "Comprehensive B2B lead generation workflow that finds prospects, enriches contact data, and crafts personalized outreach.",
+      "Комплексный B2B-процесс генерации лидов: находит потенциальных клиентов, обогащает контактные данные и создаёт персонализированные обращения.",
     members: 3,
     tasks: 3,
     tools: 7,
   },
   {
     id: "5",
-    title: "Content Marketing Squad",
+    // EN: Content Marketing Squad
+    title: "Команда контент-маркетинга",
+    // EN: Multi-format content creation team that produces blog posts, social media content, and visual assets for comprehensive marketing campaigns.
     description:
-      "Multi-format content creation team that produces blog posts, social media content, and visual assets for comprehensive marketing campaigns.",
+      "Команда мультиформатного контента: создаёт блог-посты, контент для соцсетей и визуальные материалы для комплексных маркетинговых кампаний.",
     members: 4,
     tasks: 4,
     tools: 9,
@@ -98,10 +108,13 @@ const agentTemplates: AgentTemplate[] = [
   {
     id: "writer",
     title: "ContentWriter",
-    role: "Technical Blog Writer (B2B SaaS)",
+    // EN: Technical Blog Writer (B2B SaaS)
+    role: "Технический блог-райтер (B2B SaaS)",
     icon: PenTool,
-    goal: "Deliver SEO-optimised content that generates pipeline and boosts conversions.",
-    backstory: "You translate complex SaaS topics into clear, compelling content that ranks.",
+    // EN: Deliver SEO-optimised content that generates pipeline and boosts conversions.
+    goal: "Создавать SEO-оптимизированный контент, который генерирует воронку и повышает конверсии.",
+    // EN: You translate complex SaaS topics into clear, compelling content that ranks.
+    backstory: "Вы переводите сложные SaaS-темы в понятный, убедительный контент, который ранжируется.",
     tasks: [
       { id: "t1", title: "HeadlinePack", description: "Use WebSearchTool to..." },
       { id: "t2", title: "WriteEmail", description: "Compose a 3-paragraph..." },
@@ -112,10 +125,13 @@ const agentTemplates: AgentTemplate[] = [
   {
     id: "outreach",
     title: "OutreachSpecialist",
-    role: "Cold-Outreach Copywriter (B2B)",
+    // EN: Cold-Outreach Copywriter (B2B)
+    role: "Копирайтер холодных рассылок (B2B)",
     icon: Send,
-    goal: "Book qualified demos via high-reply cold email & LinkedIn sequences.",
-    backstory: "You obsess over reply rates and deep personalisation.",
+    // EN: Book qualified demos via high-reply cold email & LinkedIn sequences.
+    goal: "Назначать квалифицированные демо через эффективные холодные рассылки и LinkedIn-секвенции.",
+    // EN: You obsess over reply rates and deep personalisation.
+    backstory: "Вы одержимы показателями ответов и глубокой персонализацией.",
     tasks: [
       { id: "t1", title: "PersonPainMat...", description: "List top three pain points..." },
       { id: "t2", title: "LinkedInMessag...", description: "Write a connection request..." },
@@ -126,10 +142,13 @@ const agentTemplates: AgentTemplate[] = [
   {
     id: "seo",
     title: "SEOSpecialist",
-    role: "Technical SEO Optimiser",
+    // EN: Technical SEO Optimiser
+    role: "Технический SEO-оптимизатор",
     icon: Search,
-    goal: "Rank target pages in top-10 SERP within 90 days.",
-    backstory: "Data-driven SEO pro leveraging advanced tooling.",
+    // EN: Rank target pages in top-10 SERP within 90 days.
+    goal: "Вывести целевые страницы в топ-10 SERP за 90 дней.",
+    // EN: Data-driven SEO pro leveraging advanced tooling.
+    backstory: "Дата-ориентированный SEO-профессионал, использующий продвинутые инструменты.",
     tasks: [
       { id: "t1", title: "SEOQuickAudit", description: "Use DataForSEODom..." },
       { id: "t2", title: "KeywordResearch", description: "Research keywords for..." },
@@ -139,10 +158,13 @@ const agentTemplates: AgentTemplate[] = [
   {
     id: "strategist",
     title: "ContentStrategist",
-    role: "B2B Content Strategist",
+    // EN: B2B Content Strategist
+    role: "B2B контент-стратег",
     icon: FileText,
-    goal: "Grow organic traffic by 30% and generate qualified leads in six months.",
-    backstory: "Ex-editor mapping content to revenue touchpoints.",
+    // EN: Grow organic traffic by 30% and generate qualified leads in six months.
+    goal: "Увеличить органический трафик на 30% и генерировать квалифицированные лиды за шесть месяцев.",
+    // EN: Ex-editor mapping content to revenue touchpoints.
+    backstory: "Бывший редактор, связывающий контент с точками дохода.",
     tasks: [
       { id: "t1", title: "QuickIdeaSnaps...", description: "Generate {amount} high-impact..." },
       { id: "t2", title: "ContentCalendar", description: "Build a 3-month calendar..." },
@@ -178,17 +200,17 @@ function TeamCard({ team }: { team: TeamTemplate }) {
       <div className="flex items-center justify-between rounded-xl bg-slate-50 px-4 py-3 text-xs font-medium text-slate-600 group-hover:bg-white group-hover:shadow-sm">
         <div className="flex items-center gap-1.5" title="Members">
           <Users className="h-4 w-4 text-blue-500" />
-          <span>{team.members} Members</span>
+          <span>{team.members} {/* EN: Members */}Участников</span>
         </div>
         <div className="h-4 w-px bg-slate-200"></div>
         <div className="flex items-center gap-1.5" title="Tasks">
           <CheckSquare className="h-4 w-4 text-green-500" />
-          <span>{team.tasks} Tasks</span>
+          <span>{team.tasks} {/* EN: Tasks */}Задач</span>
         </div>
         <div className="h-4 w-px bg-slate-200"></div>
         <div className="flex items-center gap-1.5" title="Tools">
           <Wrench className="h-4 w-4 text-orange-500" />
-          <span>{team.tools} Tools</span>
+          <span>{team.tools} {/* EN: Tools */}Инструментов</span>
         </div>
       </div>
     </div>
@@ -211,7 +233,7 @@ function AgentCard({ agent }: { agent: AgentTemplate }) {
                 <h3 className="font-bold text-slate-900">{agent.title}</h3>
                 <div className="flex items-center gap-1 text-xs text-violet-600">
                     <Sparkles className="h-3 w-3" />
-                    <span>AI Agent</span>
+                    <span>{/* EN: AI Agent */}ИИ-агент</span>
                 </div>
             </div>
           </div>
@@ -220,11 +242,11 @@ function AgentCard({ agent }: { agent: AgentTemplate }) {
 
         <div className="mb-4 flex-1 space-y-3">
           <div className="rounded-xl bg-slate-50 p-3.5 transition-colors group-hover:bg-violet-50/50">
-            <span className="mb-1 block text-[10px] font-bold uppercase tracking-wider text-slate-400">Goal</span>
+            <span className="mb-1 block text-[10px] font-bold uppercase tracking-wider text-slate-400">{/* EN: Goal */}Цель</span>
             <p className="text-sm leading-snug text-slate-700">{agent.goal}</p>
           </div>
           <div className="rounded-xl bg-slate-50 p-3.5 transition-colors group-hover:bg-violet-50/50">
-            <span className="mb-1 block text-[10px] font-bold uppercase tracking-wider text-slate-400">Backstory</span>
+            <span className="mb-1 block text-[10px] font-bold uppercase tracking-wider text-slate-400">{/* EN: Backstory */}Предыстория</span>
             <p className="text-sm leading-snug text-slate-600">{agent.backstory}</p>
           </div>
         </div>
@@ -235,10 +257,11 @@ function AgentCard({ agent }: { agent: AgentTemplate }) {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
-            Active
+            {/* EN: Active */}
+            Активен
           </div>
           <button className="flex items-center gap-1 text-xs font-semibold text-violet-600 hover:text-violet-700 hover:underline">
-             View Details <ArrowRight className="h-3 w-3" />
+             {/* EN: View Details */}Подробнее <ArrowRight className="h-3 w-3" />
           </button>
         </div>
       </div>
@@ -246,7 +269,7 @@ function AgentCard({ agent }: { agent: AgentTemplate }) {
       {/* Right Column: Tasks Grid */}
       <div className="relative flex-1 bg-slate-50/50 p-6">
         <div className="mb-3 flex items-center justify-between">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Assigned Capabilities</h4>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">{/* EN: Assigned Capabilities */}Назначенные возможности</h4>
         </div>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
           {agent.tasks.map((task) => (
@@ -284,10 +307,12 @@ export default function TemplatesPage() {
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
                 <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
-                 Library <span className="text-indigo-600">Templates</span>
+                 {/* EN: Library Templates */}
+                 Библиотека <span className="text-indigo-600">Шаблонов</span>
                 </h1>
+                {/* EN: Deploy ready-made AI crews and specialized agents to automate your workflows instantly. */}
                 <p className="mt-2 text-slate-500 max-w-2xl">
-                    Deploy ready-made AI crews and specialized agents to automate your workflows instantly.
+                    Разверните готовые ИИ-команды и специализированных агентов для мгновенной автоматизации рабочих процессов.
                 </p>
             </div>
 
@@ -303,7 +328,7 @@ export default function TemplatesPage() {
                 )}
             >
                 <Users className="h-4 w-4" />
-                Crews & Teams
+                {/* EN: Crews & Teams */}Команды
             </button>
             <button
                 onClick={() => setActiveTab("agent")}
@@ -315,7 +340,7 @@ export default function TemplatesPage() {
                 )}
             >
                 <Sparkles className="h-4 w-4" />
-                Individual Agents
+                {/* EN: Individual Agents */}Индивидуальные агенты
             </button>
             </div>
         </div>

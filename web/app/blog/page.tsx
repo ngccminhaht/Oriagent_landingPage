@@ -20,13 +20,16 @@ export default async function BlogPage() {
       {/* Header */}
       <div className="text-center mb-16">
         <span className="bg-yellow-300 text-black px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
-          Blog
+          {/* EN: Blog */}
+          Блог
         </span>
         <h1 className="text-4xl md:text-5xl font-bold mt-4 mb-2">
-          Read the latest articles
+          {/* EN: Read the latest articles */}
+          Читайте последние статьи
         </h1>
+        {/* EN: Explore our collection of articles about AI agents and their impact on various industries. */}
         <p className="text-gray-500 max-w-2xl mx-auto">
-          Explore our collection of articles about AI agents and their impact on various industries.
+          Изучите нашу коллекцию статей об ИИ-агентах и их влиянии на различные отрасли.
         </p>
       </div>
 
@@ -54,7 +57,7 @@ export default async function BlogPage() {
                   {heroPost.fields.title}
                 </h2>
                 <p className="text-gray-600 line-clamp-4 text-lg">
-                  {heroPost.fields.excerpt || "Click to read more..."}
+                  {heroPost.fields.excerpt || /* EN: Click to read more... */"Нажмите, чтобы читать дальше..."}
                 </p>
               </div>
             </div>
@@ -135,9 +138,11 @@ export default async function BlogPage() {
       {remainingPosts.length > 0 && (
         <div className="border-t pt-16">
           <div className="flex justify-between items-end mb-8">
-            <h3 className="text-2xl font-bold">Bài viết cũ hơn</h3>
+            {/* EN: Older articles */}
+            <h3 className="text-2xl font-bold">Более старые статьи</h3>
             <span className="text-sm text-gray-400 hidden md:block">
-              Kéo sang ngang để xem thêm &rarr;
+              {/* EN: Scroll right to see more */}
+              Прокрутите вправо, чтобы увидеть больше &rarr;
             </span>
           </div>
           
@@ -164,7 +169,7 @@ export default async function BlogPage() {
                     ) : (
                        // Fallback nếu không có ảnh (để không bị vỡ layout)
                        <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                          <span className="text-gray-400 text-xs">No Image</span>
+                          <span className="text-gray-400 text-xs">{/* EN: No Image */}Нет изображения</span>
                        </div>
                     )}
                   </div>

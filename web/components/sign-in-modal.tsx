@@ -23,8 +23,9 @@ export function SignInModal({ open, onOpenChange }: SignInModalProps) {
           </button>
 
           <div className="mb-8">
-            <DialogTitle className="text-sm font-medium text-white mb-1">Sign In / Sign up</DialogTitle>
-            <p className="text-xs text-zinc-500">Sign in to your account</p>
+            <DialogTitle className="text-sm font-medium text-white mb-1">{/* EN: Sign In / Sign up */}Войти / Регистрация</DialogTitle>
+            {/* EN: Sign in to your account */}
+            <p className="text-xs text-zinc-500">Войдите в свой аккаунт</p>
           </div>
 
           <div className="flex flex-col items-center justify-center mb-8">
@@ -40,7 +41,8 @@ export function SignInModal({ open, onOpenChange }: SignInModalProps) {
               className="w-full bg-transparent border-zinc-800 text-white hover:bg-zinc-900 hover:text-white h-11 font-normal relative"
             >
               <GoogleIcon className="w-5 h-5 absolute left-4" />
-              Sign in with Google
+              {/* EN: Sign in with Google */}
+              Войти через Google
             </Button>
 
             <div className="relative py-2">
@@ -48,21 +50,24 @@ export function SignInModal({ open, onOpenChange }: SignInModalProps) {
                 <span className="w-full border-t border-zinc-800" />
               </div>
               <div className="relative flex justify-center text-[10px] uppercase tracking-wider">
-                <span className="bg-[#0A0A0A] px-2 text-zinc-500">Or continue with</span>
+                <span className="bg-[#0A0A0A] px-2 text-zinc-500">{/* EN: Or continue with */}Или продолжите с</span>
               </div>
             </div>
 
             <Button className="w-full bg-[#5B5B9B] hover:bg-[#4A4A8A] text-white h-11 font-normal relative border-none">
               <PhantomIcon className="w-5 h-5 absolute left-4" />
-              Install Phantom Wallet
+              {/* EN: Install Phantom Wallet */}
+              Установить Phantom Wallet
             </Button>
           </div>
 
           <div className="mt-8 text-center">
+            {/* EN: By using oriagent.com you agree to our Terms of use */}
             <p className="text-[10px] text-zinc-500">
-              By using oriagent.com you agree to our{" "}
+              Используя oriagent.com, вы соглашаетесь с нашими{" "}
               <a href="#" className="underline hover:text-zinc-400">
-                Terms of use
+                {/* EN: Terms of use */}
+                Условиями использования
               </a>
             </p>
           </div>

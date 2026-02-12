@@ -15,42 +15,51 @@ export function MainPage() {
         <div className="mb-6">
           <Badge variant="outline" className="bg-purple-100 text-purple-700 border-purple-200">
             <span className="w-2 h-2 bg-purple-600 rounded-full mr-2 inline-block"></span>
-            Done for you AI automation
+            {/* EN: Done for you AI automation */}
+            ИИ-автоматизация под ключ
           </Badge>
         </div>
 
         {/* Main Headline */}
         <div className="mb-6">
           <h1 className="text-3xl sm:text-4xl font-semibold mb-4 text-black">
-            Get more done without doing more.
+            {/* EN: Get more done without doing more. */}
+            Делайте больше, не делая лишнего.
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-500 leading-relaxed">
-            Imagine your best teammates, multiplied.
+            {/* EN: Imagine your best teammates, multiplied. */}
+            Представьте ваших лучших коллег, умноженных.
             <br />
-            Working <span className="text-purple-600 font-semibold underline underline-offset-1 decoration-purple-600">Smarter</span>,
-            <span className="text-orange-500 font-semibold"> Faster</span>,
-            and <span className="text-green-600 font-semibold">Stronger</span>.
+            {/* EN: Working Smarter, Faster, and Stronger. */}
+            Работают <span className="text-purple-600 font-semibold underline underline-offset-1 decoration-purple-600">умнее</span>,
+            <span className="text-orange-500 font-semibold"> быстрее</span>,
+            и <span className="text-green-600 font-semibold">сильнее</span>.
 
             <br />
-            Taking care of the busywork—<br />
-            so you can do your best work.
+            {/* EN: Taking care of the busywork — so you can do your best work. */}
+            Берут на себя рутину —<br />
+            чтобы вы делали лучшую работу.
           </p>
         </div>
 
         {/* Bullet list */}
         <ul className="text-gray-700 space-y-3 mb-10 text-base">
           <li className="flex items-start gap-2">
-            <PlusCircle className='w-4 h-5 flex-shrink-0' /> Create a team of AI agents that handle real work
+            {/* EN: Create a team of AI agents that handle real work */}
+            <PlusCircle className='w-4 h-5 flex-shrink-0' /> Создайте команду ИИ-агентов для реальной работы
           </li>
           <li className="flex items-start gap-2">
-            <Workflow className='w-4 h-5 flex-shrink-0' /> Automate repetitive tasks — no training needed
+            {/* EN: Automate repetitive tasks — no training needed */}
+            <Workflow className='w-4 h-5 flex-shrink-0' /> Автоматизируйте рутинные задачи — обучение не нужно
           </li>
           <li className="flex items-start gap-2">
-            <Calendar className='w-4 h-5 flex-shrink-0' /> Plug into tools you already use
+            {/* EN: Plug into tools you already use */}
+            <Calendar className='w-4 h-5 flex-shrink-0' /> Интеграция с инструментами, которые вы уже используете
           </li>
           <li className="flex items-start gap-2">
-            <Bot className='w-4 h-5 flex-shrink-0' /> Train AI agents on your existing docs
+            {/* EN: Train AI agents on your existing docs */}
+            <Bot className='w-4 h-5 flex-shrink-0' /> Обучите ИИ-агентов на ваших документах
           </li>
         </ul>
 
@@ -64,7 +73,8 @@ export function MainPage() {
           >
             <Button size="lg" className="bg-black text-white hover:bg-gray-800 rounded-4xl">
               <span className="mr-2"><PhoneCall /></span>
-              Launch your AI Team
+              {/* EN: Launch your AI Team */}
+              Запустите вашу команду ИИ
             </Button>
 
           </a>
@@ -88,15 +98,16 @@ export function MainPage() {
             </Avatar>
             <div className="text-xs ml-2">
               <p className="font-semibold text-gray-900">13,000+ <Heart className="inline w-3 h-3 text-red-500 fill-red-500" /></p>
-              <p className="text-gray-600">Loved by users</p>
+              {/* EN: Loved by users */}
+              <p className="text-gray-600">Нас любят пользователи</p>
             </div>
           </div>
 
           
         </div>
         <div className="mt-10 flex flex-col items-start gap-2 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-200">
-          {/* Label nhỏ bên trên */}
-          <span className="text-xs text-gray-400 font-medium">Grants from</span>
+          {/* EN: Grants from */}
+          <span className="text-xs text-gray-400 font-medium">Гранты от</span>
 
           <div className="flex items-center gap-3">
 
