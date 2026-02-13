@@ -184,7 +184,7 @@ export function PricingSection() {
 
                       {/* BOOK A CALL */}
                       <a
-                        href="https://www.arrowhitech.com/contact-us/"
+                        href="https://t.me/oriagent_platform"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1"
@@ -198,7 +198,7 @@ export function PricingSection() {
 
                       {/* EMAIL US */}
                       <a
-                        href="https://www.arrowhitech.com/contact-us/"
+                        href="https://t.me/oriagent_platform"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1"
@@ -404,7 +404,7 @@ export function PricingSection() {
                       {/* CTA Buttons */}
                       <div className="flex flex-col sm:flex-row gap-3">
                         <a
-                          href="https://www.arrowhitech.com/contact-us/"
+                          href="https://t.me/oriagent_platform"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex-1"
@@ -417,7 +417,7 @@ export function PricingSection() {
                         </a>
 
                         <a
-                          href="https://www.arrowhitech.com/contact-us/"
+                          href="https://t.me/oriagent_platform"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="flex-1"

@@ -135,12 +135,12 @@ export default function ChangeLogPage() {
       </header>
 
       {/* Cover Image */}
-      <div className="relative h-[30vh] w-full bg-black overflow-hidden group">
+      <div className="relative h-[28vh] w-full bg-black overflow-hidden group">
         <Image
           src="/astronaut.jpg"
           alt="Cover"
           fill
-          className="object-cover object-left opacity-90 "
+          className="object-cover object-center opacity-90 "
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20" />
@@ -148,12 +148,7 @@ export default function ChangeLogPage() {
 
       {/* Main Content */}
       <main className="relative mx-auto max-w-3xl px-4 pb-24 sm:px-12 lg:px-24">
-        {/* Page Icon */}
-        <div className="relative -mt-9 mb-8">
-          <div className="flex h-20 w-20 items-center justify-center rounded-md text-foreground/80 transition-transform hover:scale-105">
-            <ArrowUpRight className="h-16 w-16 font-extrabold text-gray-800" strokeWidth={1.5} />
-          </div>
-        </div>
+
 
         {/* Title Section */}
         <div className="mb-12 space-y-6">

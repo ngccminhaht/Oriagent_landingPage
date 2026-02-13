@@ -477,7 +477,7 @@ export function PricingPlans() {
             </div>
             <div className="grid grid-cols-2 gap-4 mb-8">
               <a
-                href="https://www.arrowhitech.com/contact-us/"
+                href="https://t.me/oriagent_platform"
                 target="_blank"
                 rel="noopener noreferrer"
                 
@@ -486,7 +486,7 @@ export function PricingPlans() {
                 <Button className="w-full rounded-2xl h-12 text-base bg-white text-black hover:bg-gray-300">Напишите нам</Button>
               </a>
               <a
-                href="https://www.arrowhitech.com/contact-us/"
+                href="https://t.me/oriagent_platform"
                 target="_blank"
                 rel="noopener noreferrer"
                 

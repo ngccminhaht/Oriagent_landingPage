@@ -29,7 +29,7 @@ export function MainPage() {
 
           <p className="text-xl sm:text-2xl text-gray-500 leading-relaxed">
             {/* EN: Imagine your best teammates, multiplied. */}
-            Представьте ваших лучших коллег, умноженных.
+            Представьте ваших лучших сотрудников, усиленных технологиями и работающих кратно эффективнее.
             <br />
             {/* EN: Working Smarter, Faster, and Stronger. */}
             Работают <span className="text-purple-600 font-semibold underline underline-offset-1 decoration-purple-600">умнее</span>,
@@ -66,7 +66,7 @@ export function MainPage() {
         {/* CTA Buttons */}
         <div className="flex flex-col md:flex-row gap-6 md:gap-4 mb-12">
           <a
-            href="https://www.arrowhitech.com/contact-us/"
+            href="https://t.me/oriagent_platform"
             target="_blank"
             rel="noopener noreferrer"
             

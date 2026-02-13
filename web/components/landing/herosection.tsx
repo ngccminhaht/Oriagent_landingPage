@@ -41,7 +41,7 @@ export function HeroSection() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <a
-            href="https://www.arrowhitech.com/contact-us/"
+            href="https://t.me/oriagent_platform"
             target="_blank"
             rel="noopener noreferrer"
             
@@ -57,7 +57,7 @@ export function HeroSection() {
           </a>
           
           <a
-            href="https://www.arrowhitech.com/contact-us/"
+            href="https://t.me/oriagent_platform"
             target="_blank"
             rel="noopener noreferrer"
             

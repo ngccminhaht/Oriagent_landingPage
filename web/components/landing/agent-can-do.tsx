@@ -124,7 +124,7 @@ export default function AIAgentsSection() {
               <p className="text-xs text-muted-foreground mb-3">Нужен кастомный рабочий процесс {activeTab}? Мы поможем его создать.</p>
               <div className="flex flex-wrap gap-2">
                 <a
-                  href="https://www.arrowhitech.com/contact-us/"
+                  href="https://t.me/oriagent_platform"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1"
